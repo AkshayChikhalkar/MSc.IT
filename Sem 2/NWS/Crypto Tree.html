@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .tree {
+      margin-left: 40px;
+    }
+
+    .tree-node {
+      position: relative;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .tree-node:before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: -30px;
+      border-left: 2px solid #999;
+      height: calc(100% - 20px);
+    }
+
+    .tree-node.opened:before {
+      border-left: 2px solid #999;
+    }
+
+    .tree-children {
+      margin-left: 20px;
+    }
+
+    .tree-toggle {
+      position: absolute;
+      top: 12px;
+      left: -25px;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #999;
+      border-radius: 50%;
+      background-color: #fff;
+      cursor: pointer;
+      text-align: center;
+      line-height: 16px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #999;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var toggles = document.querySelectorAll(".tree-toggle");
+      Array.from(toggles).forEach(function(toggle) {
+        toggle.addEventListener("click", function() {
+          this.parentNode.classList.toggle("opened");
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="tree">
+    <div class="tree-node">
+      <div class="tree-toggle">+</div>
+      Cryptography
+    </div>
+    <div class="tree-children">
+      <div class="tree-node">
+        <div class="tree-toggle">+</div>
+        Symmetric Cryptography
+      </div>
+      <div class="tree-node">
+        <div class="tree-toggle">+</div>
+        Asymmetric Cryptography
+      </div>
+      <div class="tree-children">
+        <div class="tree-node">
+          <div class="tree-toggle">+</div>
+          Stream Ciphers
+        </div>
+        <div class="tree-node">
+          <div class="tree-toggle">+</div>
+          Block Ciphers
+        </div>
+        <div class="tree-children">
+          <div class="tree-node">
+            RC4
+          </div>
+          <div class="tree-node">
+            AES, DES
+          </div>
+          <div class="tree-node">
+            Triple DES
+          </div>
+          <div class="tree-node">
+            Blowfish
+          </div>
+        </div>
+      </div>
+      <div class="tree-children">
+        <div class="tree-node">
+          <div class="tree-toggle">+</div>
+          Public Key Cryptography
+        </div>
+        <div class="tree-node">
+          <div class="tree-toggle">+</div>
+          Hash Functions
+        </div>
+        <div class="tree-children">
+          <div class="tree-node">
+            RSA, DSA
+          </div>
+          <div class="tree-node">
+            Elliptic Curve
+          </div>
+          <div class="tree-node">
+            MD5
+          </div>
+          <div class="tree-node">
+            SHA-1, SHA-256
+          </div>
+        </div>
+      </div>
+      <div class="tree-children">
+        <div class="tree-node">
+          Diffie-Hellman
+        </div>
+        <div class="tree-node">
+          ElGamal
+        </div>
+        <div class="tree-node">
+          <div class="tree-toggle">+</div>
+          Digital Signatures
+        </div>
+        <div class="tree-children">
+          <div class="tree-node">
+            RSA, DSA
+          </div>
+          <div class="tree-node">
+            ECDSA (Elliptic Curve DSA)
+          </div>
+        </div>
+      </div>
+      <div class="tree-children">
+        <div class="tree-node">
+          RSA (Key Exchange)
+        </div>
+        <div class="tree-node">
+          DSA (Key Exchange)
+        </div>
+        <div class="tree-node">
+          ECDH (Elliptic Curve DH)
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

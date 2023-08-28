@@ -1,0 +1,37 @@
+:: set path=c:\Program Files\Java\jdk-12.0.2\bin\;%path%
+
+md ca
+md server
+md client
+
+:: 2.1.) CA - Setup (ca.ks, ca.der)
+:: --------------------------------
+keytool -genkeypair -keystore ca/ca.ks -storetype pkcs12 -storepass caSecret -alias cakey -keyalg RSA -keysize 2048 -validity 3652
+
+keytool -exportcert -keystore ca/ca.ks -storepass caSecret -alias cakey -file ca/ca.der
+
+
+:: 2.2.) Client - Generating a truststore (clientTrustStore.ks)
+:: ------------------------------------------------------------
+keytool -importcert -noprompt -keystore client/clientTrustStore.ks -storetype pkcs12 -storepass clientSecret -alias ca -file ca/ca.der
+
+
+:: 2.3.) Server - Creating a keystore, a keypair and a CSR (serverKeyStore.ks, server.csr)
+:: ---------------------------------------------------------------------------------------
+keytool -genkeypair -keystore server/serverKeyStore.ks -storetype pkcs12 -storepass serverSecret -alias server -keyalg RSA -keysize 2048 -validity 365
+
+keytool -certreq -keystore server/serverKeyStore.ks -storepass serverSecret -alias server -file server/server.csr
+
+
+:: 2.4.) CA - Server certicate signing (server.der)
+:: ------------------------------------------------
+keytool -gencert -keystore ca/ca.ks -storepass caSecret -alias cakey -infile server/server.csr -outfile server/server.der
+
+
+:: 2.5.) Server - Importing Certicate into Keystore (serverKeyStore.ks)
+:: --------------------------------------------------------------------
+:: (i) Import CA-Certicate into Keystore:
+keytool -importcert -noprompt -keystore server/serverKeyStore.ks -storepass serverSecret -alias ca -file ca/ca.der
+
+:: (ii) Import Server-Certicate into Keystore:
+keytool -importcert -keystore server/serverKeyStore.ks -storepass serverSecret -alias server -file server/server.der
