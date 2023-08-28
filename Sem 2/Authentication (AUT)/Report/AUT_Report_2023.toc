@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {I}Introduction}{3}{}%
+\contentsline {section}{\numberline {II}Dataset Selection and Description}{3}{}%
+\contentsline {section}{\numberline {III}Task Solution by State-of-the-Art Classification Methods}{3}{}%
+\contentsline {section}{\numberline {IV}Task Solution by State-of-the-Art Classification Methods}{3}{}%
+\contentsline {subsection}{\numberline {\mbox {IV-A}}What is ML?}{3}{}%
+\contentsline {subsection}{\numberline {\mbox {IV-B}}Why ML?}{3}{}%
+\contentsline {subsection}{\numberline {\mbox {IV-C}}Machine Learning Overview}{3}{}%
+\contentsline {section}{\numberline {V}Increasing Classification Performance: Feature Extraction and Feature Selection}{5}{}%
+\contentsline {section}{\numberline {VI}Advanced classification methods}{5}{}%
+\contentsline {section}{\numberline {VII}Reduction complexity and execution time}{5}{}%
+\contentsline {section}{\numberline {VIII}Conclusion}{5}{}%
+\contentsline {section}{References}{7}{}%
