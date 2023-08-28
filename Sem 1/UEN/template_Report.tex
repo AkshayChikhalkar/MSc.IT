@@ -1,0 +1,146 @@
+% !TeX spellcheck = en_US
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage{blindtext, rotating}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{bm}
+\usepackage{eurosym}
+\usepackage{apacite}
+
+\begin{document}
+% Title Page
+\begin{titlingpage}
+	\title{Evaluation of the usability and user experience of digital assistance system for mobile devices}
+	\author{Niklas Büscher\\
+	 OWL University of Applied Sciences and Arts\\
+	Lemgo, Germany \\
+	niklas.buescher@stud.th-owl.de\\
+	Matr: 15426069}
+	\date{\today}
+
+\end{titlingpage}
+
+\maketitle
+\newpage
+
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+In this study the usability and the user experience of a digital assistance system for mobile devices is evaluated. This is the Delta3 software from delta3 GmbH, which consists out of five individual software tools. These tools are the app, the editor, operations, a cloud and devices. However in this study only the app, the editor and operations are evaluated. 
+
+\noindent The editor is used to create interactive content especially instructions to display them later on in the app. The special feature of the editor is, that it shall be able to create instructions without having IT knowledge. During the evaluation, version 2.1.0.0 of the editor was used.
+
+\noindent After an instruction is created it can be uploaded, so it can be assigned to a worker. Operations is the tool for the assigning process. Workflows of workers, logs and all the different projects can be seen. In addition to that groups and roles can be created. In operations, instructions can not only be assigned to the usage in the app, they can also be assigned to a workplace where an assistant system is installed.
+
+\noindent As mentioned earlier the app is used to display worksheets (for e.g instructions). In the app the user can open an assigned worksheet, that could for example show the instructions for building a shelf. However there are more use cases because the app is able to display dynamically generated content. As stated in the app discription of the Google Play Store the app shall mainly be used for knowledge sharing and process support\footnote{https://play.google.com/store/apps/details?id=io.delta3.delta3app}. The used version of the app is the 2.8.7.
+
+\noindent This article is structured in four main parts. Firstly the expert evaluation, which was done on all three software tools. The expert evaluation shows the strengths and problems of the software. Secondly the usability test that was conducted with five participants (only) on the editor software. The usability test shall carry out the problems the expert may have not thought of. In the third part a discussion on the results of both methods is done. In the end recommendations on how the software can be improved are given.
+
+\newpage
+\section{Expert Evaluation}
+As stated in the introduction, the expert evaluation is done on the three software tools considered in this study. In the following the methods, procedures, and results of the expert evaluation are described.
+
+\subsection{Methods} \label{expert_eval_methods}
+In general for each software tool a list of usability strengths and problems is determined. Starting with the usability problems, each usability problem is described by multiple points. At first a general description is given, which can be followed by a picture, if the problem can be displayed in a picture. Next up the location where the problem can be found is explained. The exact type of the violation is given by the software design principles. Through a severity rating (low/medium/high) the problems can be prioritized. Reccomendations and examples of best practices may help the software engineeres to find a better solution.\\
+Regarding the usability strength a description with an image and the location where  strengths appears is given.
+In terms of the evaluation the ten heuristics for UI Design of Nielsen are used.\\
+The ten heuristics are:
+
+\begin{enumerate}
+	\item Visibility of System Status
+	\item Match between System and Real World
+	\item User Control and Freedom
+	\item Consistency and Standards
+	\item Error Prevention
+	\item Recognition rather than Recall
+	\item Flexebility and Efficienty of Use
+	\item Aesthetic and Minimalist Design
+	\item Help Useres Recognize, Diagnose and Recover from Errors
+	\item Help and Documentation
+\end{enumerate}
+
+
+\subsection{Procedures}
+In the expert evaluation the expert went through typical use-cases on the software tools. According to that, first an instruction is created in the editor, which is then assigned by the operations software. In the end the instruction is tested by the app.
+
+\subsubsection{Editor} \label{editor_expert_eval}
+For the expert evaluation on the editor software, an instruction on how to fold an origami crane has been created. Therefore all needed resources including videos and text have been provided. In an excel document all strength and problems of the software were noted down by using the points of \ref{expert_eval_methods}.
+Figure \ref{fig:editor_expert_eval_instructions} shows the instructions which the expert received to conduct the expert evaluation. 
+\begin{figure}[h!tb]
+	\centering
+	\includegraphics[scale = 0.50]{./editor_expert_eval.png}
+	\caption{Instructions on the expert evaluation}
+	\label{fig:editor_expert_eval_instructions}
+\end{figure}
+
+\noindent //Expert Questionaire?
+\subsubsection{Operations}
+Regarding the evaluation on the operations software, the instructions of \ref{fig:operations_expert_eval_instructions} were given. The main task was it to assign a worksheet, to make it accessible in the app.
+\begin{figure}[h!tb]
+	\centering
+	\includegraphics[scale = 0.50]{./operations_expert_eval.png}
+	\caption{Instructions on the expert evaluation}
+	\label{fig:operations_expert_eval_instructions}
+\end{figure}
+
+\subsubsection{App}
+In terms of the app evaluation, the main task was it to follow the instruction which has been created earlier (cmp. \ref{editor_expert_eval}). In fig. \ref{fig:app_expert_eval_instructions} the steps of evaluating the app software are shown.
+
+\begin{figure}[h!tb]
+	\centering
+	\includegraphics[scale = 0.50]{./app_expert_eval.png}
+	\caption{Instructions on the expert evaluation}
+	\label{fig:app_expert_eval_instructions}
+\end{figure}
+
+//how was the expert evaluation proceeded
+//which project/workflow was conducted to determine strength/problems\\
+//different expert evaluation questionaires? (no results)
+//Steps of the Expert Evaluation --> See One Note
+
+\subsection{Results}
+\section{Usability Tests}	
+\subsection{Methods}
+The usability tests have been conducted with five participants. While conducting the usability test notes on the behavior and question of the participants have been done. In this study, the usability test have been done in person, which is also known as in-person-testing. In addition to that, the usability tests were moderated and followed the handout, explained under \ref{usability_tests_procedures}. Regarding the type of the usability tests, a qualitative usability testing has been done, which focused on the insights, findings and anecdotes of the participants. To make the thoughts of the participants accessible the think-aloud method has been used\footnote{https://www.nngroup.com/articles/usability-testing-101/}. 
+In terms of the evaluation the UI Design heuristics of Nielsen are used (cmp. \ref{expert_eval_methods}).\\
+//how was the usability test conducted?\\
+//how is the test evaluated(heuristic evaluation methods)
+\subsection{Participants}
+Because the participants should be realistic users of the product, young people with mid to high technology knowledge have been recruited for the usability tests. The age of the participants ranged from 20-24 with four of the participants being male and one female.  All participants were German  students with a background in either information technology, sales or technical design. Especially one participant with a not so high technology knowledge had been chosen, because it shall be able to use the editor without technology knowledge.
+\subsection{Procedures} \label{usability_tests_procedures}
+//describe usability test guideline  \\
+{//preperation \\
+	//how have i prepared \\
+	//what was i looking for\\
+	//how did i interact/planned to interact with participants\\}
+//Describe Handout
+//describe closing questionaire of the participants
+
+\subsection{Results}
+//use User Experience Questionaire (UEQ) for benchmark the User Experience\\
+////Attracriveness, Perspicuity, Efficiency, Dependability, Stimulation, Novelty\\\\
+//most important notes from useability tests 
+
+
+\section{Discussion}
+//results from usability tests that could not been found out in Expert evaluation\\
+
+\section{Recommendations}
+//how can the software improved \\
+
+
+\newpage
+\bibliographystyle{apacite}
+
+\bibliography{research}
+\end{document}       

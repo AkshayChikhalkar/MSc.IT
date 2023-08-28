@@ -1,0 +1,712 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.2.21)  10 AUG 2023 21:21
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/Users/akshaychikhalkar/Library/CloudStorage/OneDrive-stud.th-owl.de/Sem 1/UEN/Report/UEN Report.tex"
+(/Users/akshaychikhalkar/Library/CloudStorage/OneDrive-stud.th-owl.de/Sem 1/UEN/Report/UEN Report.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-02> (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ieeetran/IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen140
+\@IEEEtrantmpdimenB=\dimen141
+\@IEEEtrantmpdimenC=\dimen142
+\@IEEEtrantmpcountA=\count185
+\@IEEEtrantmpcountB=\count186
+\@IEEEtrantmpcountC=\count187
+\@IEEEtrantmptoksA=\toks16
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 503.
+(/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+** ATTENTION: Single column mode is not typically used with IEEE publications.
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen143
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen144
+\CLASSINFOnormalsizeunitybaselineskip=\dimen145
+\IEEEnormaljot=\dimen146
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+\IEEEquantizedlength=\dimen147
+\IEEEquantizedlengthdiff=\dimen148
+\IEEEquantizedtextheightdiff=\dimen149
+\IEEEilabelindentA=\dimen150
+\IEEEilabelindentB=\dimen151
+\IEEEilabelindent=\dimen152
+\IEEEelabelindent=\dimen153
+\IEEEdlabelindent=\dimen154
+\IEEElabelindent=\dimen155
+\IEEEiednormlabelsep=\dimen156
+\IEEEiedmathlabelsep=\dimen157
+\IEEEiedtopsep=\skip48
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@IEEEsubequation=\count192
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\c@figure=\count193
+\c@table=\count194
+\@IEEEeqnnumcols=\count195
+\@IEEEeqncolcnt=\count196
+\@IEEEsubeqnnumrollback=\count197
+\@IEEEquantizeheightA=\dimen158
+\@IEEEquantizeheightB=\dimen159
+\@IEEEquantizeheightC=\dimen160
+\@IEEEquantizeprevdepth=\dimen161
+\@IEEEquantizemultiple=\count198
+\@IEEEquantizeboxA=\box51
+\@IEEEtmpitemindent=\dimen162
+\IEEEPARstartletwidth=\dimen163
+\c@IEEEbiography=\count199
+\@IEEEtranrubishbin=\box52
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen164
+)) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen165
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count266
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count267
+\leftroot@=\count268
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count269
+\DOTSCASE@=\count270
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen166
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count271
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count272
+\dotsspace@=\muskip16
+\c@parentequation=\count273
+\dspbrk@lvl=\count274
+\tag@help=\toks18
+\row@=\count275
+\column@=\count276
+\maxfields@=\count277
+\andhelp@=\toks19
+\eqnshift@=\dimen167
+\alignsep@=\dimen168
+\tagshift@=\dimen169
+\tagwidth@=\dimen170
+\totwidth@=\dimen171
+\lineht@=\dimen172
+\@envbody=\toks20
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+\c@ALC@unique=\count278
+\c@ALC@line=\count279
+\c@ALC@rem=\count280
+\c@ALC@depth=\count281
+\ALC@tlm=\skip54
+\algorithmicindent=\skip55
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen173
+\Gin@req@width=\dimen174
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count282
+\float@exts=\toks23
+\float@box=\box55
+\@float@everytoks=\toks24
+\@floatcapt=\box56
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen175
+\captionmargin=\dimen176
+\caption@leftmargin=\dimen177
+\caption@rightmargin=\dimen178
+\caption@width=\dimen179
+\caption@indent=\dimen180
+\caption@parindent=\dimen181
+\caption@hangindent=\dimen182
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtablestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\normalfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi \fi  on input line 1176.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count283
+\c@continuedfloat=\count284
+Package caption Info: float package is loaded.
+)
+\c@subfigure=\count285
+\c@subtable=\count286
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip56
+\multirow@cntb=\count287
+\multirow@dima=\skip57
+\bigstrutjot=\dimen183
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/array.sty
+Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen184
+\ar@mcellbox=\box57
+\extrarowheight=\dimen185
+\NC@list=\toks25
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box58
+)
+\everycr=\toks26
+\minrowclearance=\skip60
+\rownum=\count288
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen186
+\TX@old@table=\dimen187
+\TX@old@col=\dimen188
+\TX@target=\dimen189
+\TX@delta=\dimen190
+\TX@cols=\count289
+\TX@ftn=\toks27
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count290
+\l__pdf_internal_box=\box59
+) (UEN Report.aux)
+\openout1 = `"UEN Report.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+
+-- Lines per column: 56 (exact).
+(/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count291
+\scratchdimen=\dimen191
+\scratchbox=\box60
+\nofMPsegments=\count292
+\nofMParguments=\count293
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count294
+\MPscratchDim=\dimen192
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
+\everyMPtoPDFconversion=\toks29
+) (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+Overfull \hbox (8.20952pt too wide) in paragraph at lines 54--55
+[]\OT1/ptm/m/n/9 User experience questionnaire (UEQ), Usability Testing, Heuristic Evaluation, App / Player, Editor, Operations, User observations.
+ []
+
+[1{/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}] (UEN Report.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write3
+\openout3 = `"UEN Report.toc"'.
+
+ [2] [3] [4]
+Overfull \hbox (4.83496pt too wide) in paragraph at lines 156--164
+ [] 
+ []
+
+
+Overfull \hbox (0.95123pt too wide) in paragraph at lines 171--182
+ [] 
+ []
+
+[5]
+Overfull \hbox (4.83496pt too wide) in paragraph at lines 194--204
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]|\OT1/ptm/m/n/8 refer to Appendix B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[]|\OT1/ptm/m/n/8 refer to Appendix B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\OT1/ptm/m/n/8 refer to Appendix B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
+[]|\OT1/ptm/m/n/8 refer to Appendix B
+ []
+
+
+Overfull \hbox (0.95123pt too wide) in paragraph at lines 211--223
+ [] 
+ []
+
+
+Overfull \hbox (4.83496pt too wide) in paragraph at lines 237--246
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
+[]|\OT1/ptm/m/n/8 refer to Appendix B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--259
+[]|\OT1/ptm/m/n/8 refer to Appendix B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+[]|\OT1/ptm/m/n/8 refer to Appendix B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
+[]|\OT1/ptm/m/n/8 refer to Appendix B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--262
+[]|\OT1/ptm/m/n/8 refer to Appendix B
+ []
+
+
+Overfull \hbox (0.95123pt too wide) in paragraph at lines 253--265
+ [] 
+ []
+
+[6]
+Overfull \hbox (3.6732pt too wide) in paragraph at lines 274--275
+[]\OT1/ptm/m/n/10 The above observations demonstrate the significance of heuristic evaluation in identifying usability issues in software applications.
+ []
+
+[7]
+Overfull \hbox (1.9335pt too wide) in paragraph at lines 300--300
+[]|\OT1/ptm/b/n/8 Task
+ []
+
+
+Overfull \hbox (1.9335pt too wide) in paragraph at lines 300--300
+[]|\OT1/ptm/b/n/8 Task
+ []
+
+
+Overfull \hbox (1.9335pt too wide) in paragraph at lines 300--300
+[]|\OT1/ptm/b/n/8 Task
+ []
+
+
+Overfull \hbox (1.9335pt too wide) in paragraph at lines 300--300
+[]|\OT1/ptm/b/n/8 Task
+ []
+
+
+Overfull \hbox (1.9335pt too wide) in paragraph at lines 300--300
+[]|\OT1/ptm/b/n/8 Task
+ []
+
+
+Overfull \hbox (1.9335pt too wide) in paragraph at lines 300--300
+[]|\OT1/ptm/b/n/8 Task
+ []
+
+
+Overfull \hbox (1.9335pt too wide) in paragraph at lines 300--300
+[]|\OT1/ptm/b/n/8 Task
+ []
+
+
+Overfull \hbox (0.78966pt too wide) in paragraph at lines 301--301
+[]|\OT1/ptm/m/n/8 3V5G0| 
+ []
+
+
+Overfull \hbox (3.01358pt too wide) in paragraph at lines 302--302
+[]|\OT1/ptm/m/n/8 L5YVB| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
+[]|\OT1/ptm/m/n/8 Good design, settings,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
+[]|\OT1/ptm/m/n/8 User friendly, Colors,
+ []
+
+
+Overfull \hbox (1.67764pt too wide) in paragraph at lines 304--304
+[]|\OT1/ptm/m/n/8 K8E5Y| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--304
+[]|\OT1/ptm/m/n/8 Simplistic and clean,
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 304--304
+\OT1/ptm/m/n/8 Logging loading screen,
+ []
+
+
+Underfull \hbox (badness 4266) in paragraph at lines 304--304
+\OT1/ptm/m/n/8 Snappy and responsive,
+ []
+
+
+Overfull \hbox (4.78949pt too wide) in paragraph at lines 305--305
+[]|\OT1/ptm/m/n/8 MW1JY| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+[]|\OT1/ptm/m/n/8 Intuvative, inportant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+\OT1/ptm/m/n/8 points visible directly,
+ []
+
+[8]
+<./images/Result_Meanvalueperitem.png, id=30, 625.245pt x 511.803pt>
+File: ./images/Result_Meanvalueperitem.png Graphic file (type png)
+<use ./images/Result_Meanvalueperitem.png>
+Package pdftex.def Info: ./images/Result_Meanvalueperitem.png  used on input line 329.
+(pdftex.def)             Requested size: 625.24345pt x 511.80174pt.
+ [9 <./images/Result_Meanvalueperitem.png>]
+<./images/Resut_UEQ Scales.png, id=36, 373.395pt x 202.575pt>
+File: ./images/Resut_UEQ Scales.png Graphic file (type png)
+<use ./images/Resut_UEQ Scales.png>
+Package pdftex.def Info: ./images/Resut_UEQ Scales.png  used on input line 357.
+(pdftex.def)             Requested size: 373.39409pt x 202.5745pt.
+<./images/Results_Pragmatic and Hedonic Quality.png, id=37, 373.395pt x 213.744pt>
+File: ./images/Results_Pragmatic and Hedonic Quality.png Graphic file (type png)
+<use ./images/Results_Pragmatic and Hedonic Quality.png>
+Package pdftex.def Info: ./images/Results_Pragmatic and Hedonic Quality.png  used on input line 363.
+(pdftex.def)             Requested size: 373.39409pt x 213.74347pt.
+ [10 <./images/Resut_UEQ Scales.png> <./images/Results_Pragmatic and Hedonic Quality.png>]
+<./images/Resutls_Benchmark.png, id=43, 686.565pt x 201.699pt>
+File: ./images/Resutls_Benchmark.png Graphic file (type png)
+<use ./images/Resutls_Benchmark.png>
+Package pdftex.def Info: ./images/Resutls_Benchmark.png  used on input line 398.
+(pdftex.def)             Requested size: 686.56332pt x 201.6985pt.
+<./images/Results_KPUCalculation.png, id=44, 409.53pt x 305.943pt>
+File: ./images/Results_KPUCalculation.png Graphic file (type png)
+<use ./images/Results_KPUCalculation.png>
+Package pdftex.def Info: ./images/Results_KPUCalculation.png  used on input line 404.
+(pdftex.def)             Requested size: 409.52899pt x 305.94223pt.
+ [11 <./images/Resutls_Benchmark.png> <./images/Results_KPUCalculation.png>] [12] [13]
+Overfull \hbox (1.91502pt too wide) in paragraph at lines 487--487
+[]|\OT1/ptm/b/n/8 Variance| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
+[]|\OT1/ptm/b/n/8 Std.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--489
+[]|\OT1/ptm/m/n/8 understandable
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--506
+[]|\OT1/ptm/m/n/8 does not meet
+ []
+
+[14]
+<./images/App_Strength_1.png, id=60, 455.7025pt x 655.44875pt>
+File: ./images/App_Strength_1.png Graphic file (type png)
+<use ./images/App_Strength_1.png>
+Package pdftex.def Info: ./images/App_Strength_1.png  used on input line 557.
+(pdftex.def)             Requested size: 455.70137pt x 655.44714pt.
+<./images/App_Problem_1.png, id=61, 740.7675pt x 1062.97125pt>
+File: ./images/App_Problem_1.png Graphic file (type png)
+<use ./images/App_Problem_1.png>
+Package pdftex.def Info: ./images/App_Problem_1.png  used on input line 562.
+(pdftex.def)             Requested size: 740.76569pt x 1062.96867pt.
+<./images/App_Problem_2.png, id=62, 432.61626pt x 623.32875pt>
+File: ./images/App_Problem_2.png Graphic file (type png)
+<use ./images/App_Problem_2.png>
+Package pdftex.def Info: ./images/App_Problem_2.png  used on input line 567.
+(pdftex.def)             Requested size: 432.6152pt x 623.32722pt.
+ [15 <./images/App_Strength_1.png>]
+<./images/App_Problem_3.png, id=67, 459.7175pt x 659.46375pt>
+File: ./images/App_Problem_3.png Graphic file (type png)
+<use ./images/App_Problem_3.png>
+Package pdftex.def Info: ./images/App_Problem_3.png  used on input line 572.
+(pdftex.def)             Requested size: 459.71637pt x 659.46213pt.
+ [16 <./images/App_Problem_1.png>]
+<./images/App_Problem_4.png, id=72, 368.37625pt x 292.09125pt>
+File: ./images/App_Problem_4.png Graphic file (type png)
+<use ./images/App_Problem_4.png>
+Package pdftex.def Info: ./images/App_Problem_4.png  used on input line 577.
+(pdftex.def)             Requested size: 368.37534pt x 292.09052pt.
+ [17 <./images/App_Problem_2.png>]
+<./images/Editor_Strength_1.png, id=77, 578.16pt x 403.5075pt>
+File: ./images/Editor_Strength_1.png Graphic file (type png)
+<use ./images/Editor_Strength_1.png>
+Package pdftex.def Info: ./images/Editor_Strength_1.png  used on input line 582.
+(pdftex.def)             Requested size: 578.15858pt x 403.50652pt.
+<./images/Editor_Strength_2.png, id=78, 557.83406pt x 386.19281pt>
+File: ./images/Editor_Strength_2.png Graphic file (type png)
+<use ./images/Editor_Strength_2.png>
+Package pdftex.def Info: ./images/Editor_Strength_2.png  used on input line 587.
+(pdftex.def)             Requested size: 557.83269pt x 386.19185pt.
+ [18 <./images/App_Problem_3.png> <./images/App_Problem_4.png>]
+<./images/Editor_Strength_3.png, id=84, 176.15813pt x 190.46156pt>
+File: ./images/Editor_Strength_3.png Graphic file (type png)
+<use ./images/Editor_Strength_3.png>
+Package pdftex.def Info: ./images/Editor_Strength_3.png  used on input line 592.
+(pdftex.def)             Requested size: 176.15768pt x 190.46107pt.
+<./images/Editor_Problem_1.png, id=85, 614.295pt x 408.02437pt>
+File: ./images/Editor_Problem_1.png Graphic file (type png)
+<use ./images/Editor_Problem_1.png>
+Package pdftex.def Info: ./images/Editor_Problem_1.png  used on input line 597.
+(pdftex.def)             Requested size: 614.29349pt x 408.02338pt.
+<./images/Editor_Problem_2.png, id=86, 654.19406pt x 433.62pt>
+File: ./images/Editor_Problem_2.png Graphic file (type png)
+<use ./images/Editor_Problem_2.png>
+Package pdftex.def Info: ./images/Editor_Problem_2.png  used on input line 602.
+(pdftex.def)             Requested size: 654.19246pt x 433.61894pt.
+ [19 <./images/Editor_Strength_1.png> <./images/Editor_Strength_2.png> <./images/Editor_Strength_3.png>]
+<./images/Editor_Problem_3.png, id=94, 682.04813pt x 456.20438pt>
+File: ./images/Editor_Problem_3.png Graphic file (type png)
+<use ./images/Editor_Problem_3.png>
+Package pdftex.def Info: ./images/Editor_Problem_3.png  used on input line 607.
+(pdftex.def)             Requested size: 682.04646pt x 456.20325pt.
+<./images/Editor_Problem_4.png, id=95, 88.83188pt x 298.11375pt>
+File: ./images/Editor_Problem_4.png Graphic file (type png)
+<use ./images/Editor_Problem_4.png>
+Package pdftex.def Info: ./images/Editor_Problem_4.png  used on input line 612.
+(pdftex.def)             Requested size: 88.83165pt x 298.11302pt.
+<./images/Editor_Problem_5.png, id=96, 512.66531pt x 322.20375pt>
+File: ./images/Editor_Problem_5.png Graphic file (type png)
+<use ./images/Editor_Problem_5.png>
+Package pdftex.def Info: ./images/Editor_Problem_5.png  used on input line 617.
+(pdftex.def)             Requested size: 512.66405pt x 322.20296pt.
+ [20 <./images/Editor_Problem_1.png> <./images/Editor_Problem_2.png> <./images/Editor_Problem_3.png>]
+<./images/Operation_Strength_1.png, id=103, 647.41875pt x 618.05907pt>
+File: ./images/Operation_Strength_1.png Graphic file (type png)
+<use ./images/Operation_Strength_1.png>
+Package pdftex.def Info: ./images/Operation_Strength_1.png  used on input line 622.
+(pdftex.def)             Requested size: 647.41716pt x 618.05756pt.
+<./images/Operation_Strength_2.png, id=104, 662.475pt x 627.84563pt>
+File: ./images/Operation_Strength_2.png Graphic file (type png)
+<use ./images/Operation_Strength_2.png>
+Package pdftex.def Info: ./images/Operation_Strength_2.png  used on input line 627.
+(pdftex.def)             Requested size: 662.47339pt x 627.84409pt.
+ [21 <./images/Editor_Problem_4.png> <./images/Editor_Problem_5.png>]
+<./images/Operation_Problem_1.png, id=110, 566.86781pt x 686.565pt>
+File: ./images/Operation_Problem_1.png Graphic file (type png)
+<use ./images/Operation_Problem_1.png>
+Package pdftex.def Info: ./images/Operation_Problem_1.png  used on input line 632.
+(pdftex.def)             Requested size: 566.86642pt x 686.56332pt.
+<./images/Operation_Problem_2.png, id=111, 738.50906pt x 702.37407pt>
+File: ./images/Operation_Problem_2.png Graphic file (type png)
+<use ./images/Operation_Problem_2.png>
+Package pdftex.def Info: ./images/Operation_Problem_2.png  used on input line 637.
+(pdftex.def)             Requested size: 738.50726pt x 702.37236pt.
+ [22 <./images/Operation_Strength_1.png> <./images/Operation_Strength_2.png>]
+<./images/Operation_Problem_3.png, id=117, 749.80125pt x 711.4078pt>
+File: ./images/Operation_Problem_3.png Graphic file (type png)
+<use ./images/Operation_Problem_3.png>
+Package pdftex.def Info: ./images/Operation_Problem_3.png  used on input line 642.
+(pdftex.def)             Requested size: 749.79942pt x 711.40607pt.
+ [23 <./images/Operation_Problem_1.png>]
+<./images/Operation_Problem_4.png, id=122, 770.88pt x 736.25063pt>
+File: ./images/Operation_Problem_4.png Graphic file (type png)
+<use ./images/Operation_Problem_4.png>
+Package pdftex.def Info: ./images/Operation_Problem_4.png  used on input line 647.
+(pdftex.def)             Requested size: 770.87813pt x 736.24883pt.
+<./images/Operation_Problem_5.png, id=123, 795.72281pt x 760.34062pt>
+File: ./images/Operation_Problem_5.png Graphic file (type png)
+<use ./images/Operation_Problem_5.png>
+Package pdftex.def Info: ./images/Operation_Problem_5.png  used on input line 652.
+(pdftex.def)             Requested size: 795.72086pt x 760.33876pt.
+ [24 <./images/Operation_Problem_2.png> <./images/Operation_Problem_3.png>] [25 <./images/Operation_Problem_4.png> <./images/Operation_Problem_5.png>] (UEN Report.bbl)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[26] (UEN Report.aux) ) 
+Here is how much of TeX's memory you used:
+ 6226 strings out of 478313
+ 111435 string characters out of 5837689
+ 1901346 words of memory out of 5000000
+ 26278 multiletter control sequences out of 15000+600000
+ 549785 words of font info for 103 fonts, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 67i,13n,77p,1646b,465s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc}</Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></Users/akshaychikhalkar/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "UEN Report.pdf" (26 pages, 2577519 bytes).
+PDF statistics:
+ 153 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+

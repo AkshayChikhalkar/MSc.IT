@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {I}Introduction}{3}{}%
+\contentsline {section}{\numberline {II}Evaluation methods}{3}{}%
+\contentsline {subsection}{\numberline {\mbox {II-A}}Heuristic Evaluation}{3}{}%
+\contentsline {subsection}{\numberline {\mbox {II-B}}Usability Testing}{4}{}%
+\contentsline {subsubsection}{\numberline {\mbox {II-B}1}User profiles}{4}{}%
+\contentsline {subsubsection}{\numberline {\mbox {II-B}2}User sudy}{4}{}%
+\contentsline {subsection}{\numberline {\mbox {II-C}}User Experience Questionnaire}{4}{}%
+\contentsline {section}{\numberline {III}Experiment and Results}{5}{}%
+\contentsline {subsection}{\numberline {\mbox {III-A}}Heuristic Evaluation}{5}{}%
+\contentsline {subsubsection}{\numberline {\mbox {III-A}1}App / Player}{5}{}%
+\contentsline {subsubsection}{\numberline {\mbox {III-A}2}Editor}{6}{}%
+\contentsline {subsubsection}{\numberline {\mbox {III-A}3}Operations}{6}{}%
+\contentsline {subsection}{\numberline {\mbox {III-B}}Usability testing}{7}{}%
+\contentsline {subsubsection}{\numberline {\mbox {III-B}1}User observations}{7}{}%
+\contentsline {subsection}{\numberline {\mbox {III-C}}User Experience Questionnaire}{8}{}%
+\contentsline {subsubsection}{\numberline {\mbox {III-C}1}Mean value per item}{8}{}%
+\contentsline {subsubsection}{\numberline {\mbox {III-C}2}UEQ Scales}{10}{}%
+\contentsline {subsubsection}{\numberline {\mbox {III-C}3}Pragmatic \& Hedonic Quality}{10}{}%
+\contentsline {subsubsection}{\numberline {\mbox {III-C}4}Benchmark}{10}{}%
+\contentsline {subsubsection}{\numberline {\mbox {III-C}5}KPI Calculation}{11}{}%
+\contentsline {subsubsection}{\numberline {\mbox {III-C}6}Sample Size}{11}{}%
+\contentsline {section}{\numberline {IV}Discussion}{12}{}%
+\contentsline {section}{\numberline {V}Conclusion}{13}{}%
+\contentsline {section}{References}{26}{}%
