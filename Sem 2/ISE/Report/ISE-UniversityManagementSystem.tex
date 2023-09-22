@@ -1,0 +1,951 @@
+
+%\documentclass[conference,onecolumn]{IEEEtran}
+\documentclass[article,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+%\usepackage{xcolor}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{tabularx}
+\usepackage{color}
+\usepackage{array}
+\usepackage{framed}
+\usepackage[figuresleft]{rotating}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\definecolor{yellow}{rgb}{0.85, 1,1}
+\definecolor{pastleyellow}{rgb}{1, 0.98,0.63}
+\setlength{\arrayrulewidth}{0.1mm}
+\setlength{\tabcolsep}{6pt}
+\setlength\headheight{10pt}
+\usepackage{cellspace}
+\setlength\cellspacetoplimit{4pt}
+\setlength\cellspacebottomlimit{4pt}
+\usepackage{multicol}
+
+\newcommand\cincludegraphics[2][]{\raisebox{-0.3\height}{\includegraphics[#1]{#2}}}
+
+
+\setlength\parskip{1em plus 0.1em minus 0.2em}
+\setlength\parindent{0pt}
+\setlength{\parskip}{8pt}
+%\usepackage{subcaption}
+
+\begin{document}
+
+\title{University Room Management System\\} %TODO
+
+\author{\IEEEauthorblockN{Sean Nagel, Akshay Chikhalkar, Mohamed Bassam Kassabji}\\ %TODO
+\IEEEauthorblockA{\textit{Department of Electrical Engineering and Computer Science} \\
+\textit{Technische Hochschule Ostwestfalen-Lippe, University of Applied Sciences and Arts}\\
+Lemgo, Germany \\
+akshay.chikhalkar@stud.th-owl.de, sean.nagel@stud.th-owl.de, mohamed.kassabji@stud.th-owl.de}
+
+}
+
+%\maketitle
+
+\begin{titlepage}
+	%https://en.wikibooks.org/wiki/LaTeX/Title_Creation#A_practical_example
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figures/TH_OWL.jpg}\par\vspace{1cm}
+	{\scshape\LARGE Technische Hochschule Ostwestfalen-Lippe,\\University of Applied Sciences and Arts \par}
+	{\scshape\large Department of Electrical Engineering and Computer Science\par}
+	\vspace{1cm}
+	{\scshape\Large Industrial Software Engineering - Summer term 2023\par}
+	\vspace{1.5cm}
+	{\huge\bfseries\scshape University Room Management System\par}
+	\vspace{2cm}
+	{\Large\itshape Sean Nagel, Akshay Chikhalkar, Mohamed Bassam Kassabji\par}
+	{\itshape sean.nagel@stud.th-owl.de, akshay.chikhalkar@stud.th-owl.de, mohamed.kassabji@stud.th-owl.de\par}
+	
+	\vfill
+	
+	% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+
+% Structure of the paper:
+% (Bassam) Introduction:
+% - IOT Systems lead to many opportunities
+% - A case for using IOT can be room management in universities
+% - This paper / report discusses a proposed IOT System for room managemt of a university, caled the university Room managemt system
+% - The document discusses: Business processes, use cases, user stories to design a domain model and system architecture.
+% (Sean) System description and business process(es)
+% (sean) Use cases and user stories
+% - Short lookout: Use AI tools for specification
+% (Akshay) Domain model
+% (Akshay) System architecture
+% (Bassam) Choosing an appropriate Software development process
+% (?) Conclusion/Lookout
+
+\newpage
+\tableofcontents
+
+\newpage
+\section{Introduction}
+In a world where everything is connected, we notice that the term Internet of Things (IoT) is gaining in importance, connecting devices no matter the distance, the type, and even the size. An increasing amount of electronic (smart) devices that we use in our daily life has the possibility to connect to the internet through wireless connection, which make it possible to control all these devices from anywhere at any time. To date, more than 15 billion smart devices are connected, with an estimation to be 30 billion connected devices by the end of 2030. There are multiple communication technologies that are used by IoT, including \cite{a1}:
+
+\begin{multicols}{2} %(2 columns)
+	\begin{center}
+		\begin{itemize}
+			\item RFID
+			\item WSN
+			\item IEEE 802. 15.4
+			\item Z-Wave
+			\item LTE
+			\item NFC
+			\item UWB
+			\item M2M
+			\item 6LoWPAN	
+		\end{itemize}
+	\end{center}
+\end{multicols}
+	
+The amount of equipment that is digitalized and connected to the internet is increasing, which requires establishing networks between humans, machines, and the internet. With the help of the IoT infrastructure and capabilities to work as a system of interconnected devices, it allows the integration and the effectiveness of exchanging the data between all devices and users. Nowadays, IoT applications exist almost everywhere, from small homes to big companies and industries. One of the beneficiaries of such advanced technologies is the education systems, which makes use of the IoT capabilities to improve the students, professors, and guest’s experiences at the universities. Proven benefits of IoT solutions are the three factors cost, resource efficiency and time savings \cite{a2}. As an example, for the IoT system, we introduced in our paper a University Room Management System (URMS) that utilizes the IoT infrastructure to make the university experiences easier and more enjoyable. The URMS is designed to help the students, professors, and guests around the universities, especially for new students and guests, where the system provides suitable solutions for problems that users are facing in a normal university day. 
+
+This paper discussed the process of designing the URMS, starting with describing the system, which includes building a Business Process Model, Use Cases, User Stories, and designing a Domain Model and System Architecture. After that, we discussed the options for choosing a Software Development Process Model to develop the overall system. 
+
+
+\section{System description}
+
+As mentioned, this document focuses on the proposed University Room Management System.
+As can be guessed from the name, the system should provide multiple features regarding management of a university's rooms.
+Users of the system shall be students and employees of the university. Additionally, guests can also use the system, although they will not have access to the system's complete functionality.
+
+The basic functionality of the system should allow all users to search and find rooms. The system shall also be able to recommend rooms based of some user defined criteria. The users are able to view room schedules.
+The system should also provide users with navigational instructions to rooms.
+
+Students and university staff should be able to book rooms for lectures or learning groups. Employees of the university should be granted more privileges regarding room booking than students. These privileges might include booking a room in advance or according to a specific schedule.
+
+The university's rooms are fitted with IoT technologies.
+Electronic locks are built into the rooms' doors. Members of the university are able to unlock these doors, if they booked the room.
+The rooms are also fitted with movement sensors, to analyze if the room is currently occupied.
+Additionally, rooms might have a display, which shows the room's schedule and availability.
+
+\begin{sidewaysfigure}
+	\includegraphics[width=\linewidth]{Figures/BPMN_StudentBooksRoom_1.png}
+	\caption{Business Process ``Student Books Room'' (Part 1)}
+	\label{fig:bpmn_1}
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure}
+	\includegraphics[width=\linewidth]{Figures/BPMN_StudentBooksRoom_2.png}
+	\caption{Business Process ``Student Books Room'' (Part 2)}
+	\label{fig:bpmn_2}
+\end{sidewaysfigure}
+
+To further describe the functionality of the URMS a specific business process should be examined. This business process describes a student booking and using a room. The business process according to Business Process Model and Notation (BPMN) is shown in \figurename~\ref{fig:bpmn_1}-\ref{fig:bpmn_2}.
+
+The Business Process is triggered, when a student needs a room at the university.
+The student accesses the URMS and searches for a room, either by entering a room number or by requesting specific room properties like size or furniture.
+The URMS receives the search query and returns a list of rooms fulfilling the query.
+The student now has to decide, if one of the listed rooms fulfills their requirements. If that is not the case, the business process ends prematurely.
+
+If a room in the returned list satisfies the students requirements, the student selects the specific room and books it.
+The booking is handled by the URMS by updating the booking status of the selected room and sending a confirmation to the student.
+
+After booking the room, the student navigates to the room.
+If the student knows the direction to the room, they can move to the room without using the URMS.
+Alternatively, the student can request navigation instructions to the room. The URMS generates the instructions, which can be used by the student to move to the booked room.
+
+After reaching the room, the student tries to unlock the room by scanning their student id on the electronic lock of the room.
+The URMS checks, if the student has access to the room. As the student booked the room beforehand, they have access and the electronic lock of the room is unlocked.
+The student can enter the room and start working.
+If the room has a status display, the room is now shown to be occupied.
+
+There are three possibilities, how the booking ends.
+The first possibility is that the student finished their work, leaves the room and checks out via the URMS.
+There is also the possibility, that the student leaves the room, but forgets to check out via the system. For this reason the system checks in an hourly interval, whether there are still people inside the room. This check is realized through the movement sensors built into the room. If no people are registered inside the room, the system will behave as if the student checked out.
+The third possibility is that the room is booked for another event like a lecture.
+Five minutes before the other booking starts, the student is notified, that they should leave the room and check out. After receiving the notification, the student stops their work, leaves the room and checks out.
+
+The business process ends with the URMS updating the room's booking status, locking the room and potentially updating the occupancy status on the room display.
+
+\section{Use cases and user stories}
+
+To further identify the desired functionality of the University Room Management System, two use cases and three user stories were identified and formulated.
+One use case and two user stories are described in more detail in this section.
+
+\subsection{Use cases}
+
+The identified use cases are \emph{Searching and booking a room} and \emph{Getting navigation instructions to a room}.
+For the use case \emph{Searching and booking a room} a use case specification was created. The specification is shown in \tablename~\ref{tab:usecasespec}. Some aspects of this use case specification will be further elaborated on.
+
+\begin{table}[htp]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		Name                        & Searching and booking a room \\ \hline
+		Scope                       & University Room Management System \\ \hline
+		Level                       & User goal \\ \hline
+		Primary Actor               & Student, Professor or other university staff \\ \hline
+		Stakeholders / interests    & \begin{tabular}[t]{@{}l@{}}Other members of the university (students, professors, other staff)\\ University / university management\end{tabular}\\ \hline
+		Preconditions               & User is in possession of a valid university card and has a user account \\ \hline
+		Postconditions              & Status of the rooms in the room database is updated \\ \hline
+		Main success scenario       & \begin{tabular}[t]{@{}l@{}}
+				1. User searches a room via a room number\\
+				2. System returns a list of rooms fulfilling the search query\\
+				3. User selects a room from the list\\
+				4. System shows detailed information about the selected room\\
+				5. User books the room\\
+				6. System updates booking status of the room\\
+				7. System shows booking information and confirmation
+			\end{tabular} \\ \hline
+		Extensions                  & \begin{tabular}[t]{@{}l@{}}
+			1a. User searches room via room properties\\
+			\: 1. User opens page to filter specific properties\\
+			\: 2. User selects room requirements and confirms\\
+			2a. No room fulfilling the search criteria exists\\
+			\: 1. System shows message: ``No rooms found''\\
+			\: 2. System presents rooms similar to the search query\\
+			5a. Room is already booked\\
+			\: 1. System shows message: ``Room is already booked''\\
+			\: 2. System suggests a list of similar rooms\\
+			5b. User already booked the allowed maximum amount of rooms\\
+			\: 1. System shows message: ``You cannot book another room''\\
+			\: 2. System shows list of rooms already booked by the user\\
+			5c. User books room according to a schedule (for future use)\\
+			\: 1. System presents a day and time picker\\
+			\: 2. User selects day of week and time\\
+			\: 3. System asks for the frequency of the booking\\
+			\: 4. User selects how often booking should be repeated\\
+			\: 5. System books room for all selected time slots\\ 
+			\:\: 5a. Room is not available in all time slots\\
+			\:\:\: 1. System shows message: ``Room is not available at \textless{}DAY / TIME\textgreater{}''\\
+			\:\:\: 2. System provides alternative time slots and rooms\\
+			\:\:\: 3. User selects alternatives\end{tabular} \\ \hline
+		Special requirements        & \begin{tabular}[t]{@{}l@{}}Stable database\\ Simple UI design\\ Fast search\end{tabular} \\ \hline
+		Technology / data variation & Available via a terminal at the university or via a web app \\ \hline
+		Frequency of occurrence     & \begin{tabular}[t]{@{}l@{}}Very regularly, up to multiple requests per minute at most active times\\ Long pauses without interaction also likely\end{tabular} \\ \hline
+		Open issues                 & Booking of multiple rooms at once \\ \hline
+	\end{tabular}
+	\caption{Use case specification for the use case \emph{Searching and booking a room}}
+	\label{tab:usecasespec}
+\end{table}
+
+Extension 1a describes searching for a room via room properties.
+Possible properties for searching and filtering rooms could be: type of the room (lecture room or seminar room), room capacity or the availability of projectors and blackboards.
+
+In extension 5b the maximum allowed number of rooms is noted. This limit can be different depending on the user. Our current specification limits students to be allowed of booking only a single room at a given time. University staff is allowed to book multiple rooms at a time (e.g. a Professor booking multiple rooms for an exam). The specific limits for each group of staff should be selected according to the universities specific needs.
+
+Extension 5c notes the possibility to book a room for future use according to a time schedule. This option shall not be available to students but only to university staff. For example a room can be booked for a specific time frame on a weekly basis.
+This stands in contrast to the general booking presented in the main success scenario. In that case the room is booked from the time of booking without specifying the length of the booking. The booking has to be manually terminated in the end. Alternatively the booking is also terminated, if the system registers that the room has not been used for a while or a previously scheduled booking is about to start. Please see the BPMN diagram in \figurename~\ref{fig:bpmn_2} for this process.
+
+The open issues of the use case note the booking of multiple rooms at once.
+The process for this will likely be very similar to booking a single room. Showing information for multiple rooms at once and managing the unavailability of a single room of the selection need to be further deliberated. Similarly to scheduled booking, students should not be allowed to book multiple rooms.
+
+\newpage % Force new page for better look
+
+\subsection{User stories}
+
+The following three user stories were formulated:
+
+\begin{enumerate}
+	\item As a Student, I want to book a room, so that I have a place to work.
+	\item As a Guest, I want to have navigational instructions, so that I am able to locate a room.
+	\item As a Professor, I want to book a room according to a schedule, so that I can give regular lectures in that room.
+\end{enumerate}
+
+A good practice is to formulate user stories according to the INVEST principle.
+This principle describes that a user story should be independent, negotiable, valuable, estimable, small and testable \cite{Buglione_2013}.
+User stories 1 and 2 were elaborated further and analyzed with regard to the INVEST principle.
+
+The first user story ``As a Student, I want to book a room, so that I have a place to work.'' is extended by following points:
+
+\begin{itemize}
+	\item A student is only allowed to book at most one room at any given time.
+	\item Students can only book rooms for the current time and are not able to reserve them for later.
+	\item A student is identified by their university id.
+	\item Bookings by students do not have an ending time specified.
+	\item Students are able to terminate their bookings manually.
+	\item Bookings by students are terminated automatically, if a booking by a university employee starts.
+\end{itemize}
+
+The user story fulfills the INVEST principle, as it does not depend on other user stories, leaves room for negotiation and presents a value to the students.
+A development team should be able to estimate the work required for realization. The story itself is small, as it only focuses on bookings for a single user group.
+The story can be tested by students trying to book rooms.
+
+The second user story ``As a Guest, I want to have navigational instructions, so that I am able to locate a room.'' is extended by following points:
+
+\begin{itemize}
+	\item The user story is also valid for students and university employees.
+	\item Navigation is realized trough  building schematics, as well as indoor and outdoor maps.
+	\item Other points of interest (e.g. parking spots, water fountains) are out of scope and might be part of standalone user stories.
+	\item Users do not need to be verified for navigation.
+\end{itemize}
+
+This user story is independent of other user stories and still leaves room for negotiation. The value of better navigation at the university campus is provided.
+The use case is small and the required amount of work can be estimated. Tests might include the navigation between rooms or buildings of the university by external people.
+Thus, this use case also fulfills the INVEST principle.
+
+\section{Using machine learning models as specification instruments} \label{sec:chatgpt}
+
+One use case and one user story from the previous section were intentionally not further specified. Instead, they were used to analyze the ability of language models like ChatGPT\footnote{https://openai.com/chatgpt} to generate parts of a system specification.
+In particular, we used the aforementioned ChatGPT by OpenAI to generate a use case specification and elaborate on a user story according to the INVEST principle.
+
+The conversation with ChatGPT can be found in appendix~\ref{appdx:chatgpt}.
+
+% About the use case specification
+
+The initial prompt included a short description of the system and asked to write a use case specification for the specific use case.
+ChatGPT returned a specification including a name, ID, primary actor, preconditions, postconditions, trigger, main flow, alternate flow, exceptional flow and notes.
+To simplify comparisons, ChatGPT was asked to provide the specification with the same aspects as those of the specification in \tablename~\ref{tab:usecasespec}.
+
+On first sight, the generated response seems to be good. Some points even include additional explanations. We made following observations:
+
+The use case's level was identified as being a user goal and a sub-function. The level should be either one or the other, but not both. By investigating the specification it can be seen, that it should probably be a user goal instead of a sub-function.
+
+The three stakeholders students, professors and guests are identical to the primary actors previously noted in the specification. The only stakeholder, which is not a primary actor is the university management. In this case the primary actors should not be listed in the stakeholders section.
+
+The generated preconditions are relatively simple and are not necessarily needed for the use case specification. Additionally, the third precondition, that the user needs to be logged in, directly contradicts the main success scenario, in which the user is logging in during step 2. Either the precondition or the following scenario is wrong.
+
+The main success scenario starts with the user opening the system application. This is different to our approach, where the scenario started with the application being ready for user interaction. The approach chosen by ChatGPT is not wrong, but just different to the approach chosen by us.
+Step 7 and 8 describe how the scenario continues depending on whether a room was found or not. The main success scenario should only contain the successful case of the room being found. The other case should be included as an alternative flow.
+Interestingly enough, the single alternative flow of the specification handles this case. Thus, step 8 of the main flow is unnecessary.
+
+For the point frequency of occurrence the generated specification is defined as ``frequently throughout the academic year''. This is a very non-descriptive specification, as it is unclear if the use cases will occur multiple times per hour, per day or per week.
+
+% About the user story
+
+After generating the discussed use case specification ChatGPT was prompted to write a user story using the INVEST principle for user story 3: ``As a Professor, I want to book a room according to a schedule, so that I can give regular lectures in that room.''
+
+The answer starts by listing the six facets of INVEST. It is declared that the given user story fulfills all aspects of the INVEST principle.
+Additionally, acceptance criteria for the use case are defined by the language model. The acceptance criteria seem sensible to the use case. Although the first five acceptance criteria are structured very similar to a use cases main success scenario.
+The answer also includes some additional considerations, which also seem sensible in the context of the system.
+
+While reading ChatGPT's answer the question arose, how the model would handle a user story, which does not fulfill all aspects of INVEST.
+Thus, the model was prompted to write another user story according to the INVEST principle. The user story requested in this prompt was: ``As a University member, I want to use the Room Management System, because it will make life easier.''
+This user story is very broad and unspecific, such that it is neither estimable nor small. The user story also is not independent, as it focuses on the entire room management system at once.
+
+The answer of ChatGPT is disappointing, as it is argued that the given user story fulfills all aspects of INVEST. Especially statements like ``The user story has a focused scope'', or ``It focuses on the specific need [...] to utilize the Room Management System'' show that the problems of the user story are not detected by ChatGPT. The task to write the use case according to the INVEST principle is done, but there are no plausibility check performed.
+
+Although the answers by ChatGPT are not completely correct, the amount of sensible output by the language model are quite impressive, especially if you consider the small amount of information given in the prompts.
+The answers of ChatGPT need to be checked for plausibility and cannot be used as is. But the generated use case specifications and user story elaborations can be used as a good starting point, which requires some manual fine-tuning by human designers. Using language models for initial specification drafts can probably decrease the required time for a system specification.
+
+It should also be noted that the used ChatGPT is a general purpose language model. More specialized models might yield even better results.
+Currently, there are developments on models with the specific task to generate such specification and even write some initial code. One example that should be noted in this context is ``MetaGPT''\footnote{https://github.com/geekan/MetaGPT}, which according to its development page is able to generate user stories, requirements, APIs and more.
+
+
+
+
+%%%%%%%% Domain Model (Akshay)%%%%%%%%%
+\section{Domain model}
+	A domain model is a conceptual framework utilized in software engineering to encapsulate the fundamental elements comprising a particular problem domain \cite{larman2012applying}. It involves creating a visual or diagrammatic representation that outlines the essential entities, their attributes, interconnections, and governing principles within the domain. This model plays an important role in nurturing and fostering a comprehensive understanding among diverse stakeholders, including developers, designers, and domain experts \cite{fowler2004uml}. It also involves defining entities like ``Customer'', ``Product'' or ``Order'', detailing their characteristics and the relationships that bind them. By delineating associations, constraints, and business rules, a domain model ensures that the software system mirrors the intricacies of the real-world context it aims to address. Typically illustrated through Unified Modeling Language (UML) class diagrams, domain models facilitate effective communication and serve as a foundation for crafting software solutions aligned with the domain's intricacies and requirements \cite{booch1994oo}.
+
+	The domain model helps in the pragmatic understanding of the domain. It involves key concepts such as nomenclature, which bridge the gap between domain experts, software developers and end users. Naming entities in a linguistic manner or relatable way helps to relate the system better to the real world, understand programming logic, track changes and maintain the system. Building a domain model involves, finding conceptual classes, drawing class diagrams adding associations which are as follows:
+
+
+
+\subsection{Conceptual classes} \label{sec:conceptualclasses}
+	The conceptual classes are abstract representations of real-world entities or concepts within a specific problem domain. These classes serve as a fundamental building block for creating software systems that accurately model and interact with the entities, attributes, and behaviors present in that domain\footnote{https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop}.
+
+
+	The conceptual classes are based on the most important entities in the system (physical or imaginary), goals (e.g. ``Booking''), standard categories (e.g. ``User''), and the system's environment (e.g. ``Place''). This also includes linguistic analysis of the use cases \& business processes, additional documents if any, and expert knowledge. Considering the University Room Management System, the conceptual classes are identified as in \tablename~\ref{tab:conceptualclasses}.
+
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|l|l|}
+			\hline
+			Business transactions                       & Booking (includes reservations implicitly) \\ \hline
+			Transaction line items                      & Booking time frame \\ \hline
+			Product/service                       		& \begin{tabular}[t]{@{}l@{}}
+																Room \\
+																Navigation Instructions
+															\end{tabular} \\ \hline
+			Transaction record               			& - \\ \hline
+			Actors									    & \begin{tabular}[t]{@{}l@{}}
+																Students \\ 
+																Guests \\
+																Professors \\
+																Other university employees
+															\end{tabular} \\ \hline
+			Place               					 	& \begin{tabular}[t]{@{}l@{}}
+																University campus \\ 
+																Software Frontend (System user interface)
+															\end{tabular} \\ \hline
+			Events              						& Bookings \\ \hline
+			Physical objects       						& \begin{tabular}[t]{@{}l@{}}
+																Rooms \\
+																Buildings \\
+																Room display \\
+																Door lock \\
+																Movement sensor
+															\end{tabular} \\ \hline
+			Descriptions                  				& - \\ \hline
+			Catalouge        							& - \\ \hline
+			Container									& \begin{tabular}[t]{@{}l@{}}
+																Room \\ 
+																Building \\
+																Campus
+															\end{tabular} \\ \hline
+			Things in container						    & \begin{tabular}[t]{@{}l@{}}
+																Building \\ 
+																Room \\
+																Room display \\
+																Door lock \\
+																Movement sensor
+															\end{tabular} \\ \hline
+			Neighboring systems                 		& - \\ \hline
+			Records                 					& Booking \\ \hline
+			Financial instruments                 		& - \\ \hline
+			Schedules/manuals                 			& Room schedule \\ \hline
+
+		\end{tabular}
+		\caption{Conceptual classes for the University Room Management System}
+		\label{tab:conceptualclasses}
+	\end{table}
+
+	%%%%%% Need to review %%%% @akshay
+
+
+	The conceptual classes were identified by analyzing following categories:\\	
+	The system's ``business transactions'' involve actions like making room reservations or bookings. Each transaction is further detailed through ``transaction line items,'' which specify aspects such as the timestamp for a room reservation. The ``product/service'' category encompasses items like rooms and navigation instructions, while ``actors'' refers to the different individuals who interact with the system, such as students, professors, guests, and university staff.
+	
+	``Place'' pertains to relevant locations, including the university campus and the user interface of the system itself. Events like bookings are tracked under ``events,'' while ``physical objects'' encompass tangible items like rooms, buildings, and sensors.
+	
+	``Container'' refers to broader categories like buildings, rooms, and the campus, while ``things in container'' delves into specific instances within those categories, such as individual rooms and door locks. The concept of ``neighboring systems'' highlights potential interactions with other external systems.
+	
+	``Records'' represent the detailed information about bookings made within the system. ``Schedules/manuals'' involve information related to room schedules or guidelines. These conceptual classes help paint a comprehensive picture of how the University Room Management System operates and how its various components fit together.
+
+\subsection{Class diagram}
+	The class diagram illustrates the structure and relationship among classes in the system. To build the domain class diagram we used previously identified conceptual classes from section~\ref{sec:conceptualclasses}. The university room management system includes a total of 13 classes which are shown in \figurename~\ref{fig:classdiagram} below.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{Figures/DomainModel.pdf}
+		\caption{Domain model of the University Room Management System}
+		\label{fig:classdiagram}
+	\end{figure}
+
+	\subsubsection*{Classes} \label{sec:classes}
+		The classes are an amalgamation of physical objects and software components. The classes are described below:
+		
+		Movement sensor: The movement sensor is a physical object that is used to detect the presence of a person in the room. It is connected to the room display and the door lock through the system (Room). At least one movement sensor is present in each room and connected to the class ``Room'' in a many-to-one association.
+		
+		Display: The display is a physical object that displays the room schedule and other booking information. In this system we consider one or no display per room and connected to the class ``Room'' in one-to-one or none-to-one association.
+
+		Lock: The lock is again a physical object that is used to lock and unlock the room. In this system, we consider one lock per room and connected to the class ``Room'' in one-to-one association. The class ``Lock'' has one attribute ``Battery Level'' which is used to check the status of the battery and helps to keep track of maintenance cycles.
+
+		Navigation Instructions: The navigation instructions are a service which is used to provide directions or visual insight to the user. Navigation instructions can be invoked by the system itself or by the user. This can be achieved by requesting navigation instructions at the time of booking or by accessing the navigation service and searching for the room number. The class ``Navigation Instructions'' has one attribute ``Type of instruction'' which defines whether instructions are requested in the form of building schematics or maps. It is associated with the class ``Room'' and ``User'' in a many-to-one association. The navigation instructions reference the ``Room'', where the instructions lead to and the ``User'', who requested the instructions.
+
+		Schedule: The class ``Schedule'' holds the schedule metadata about the lectures according to the scheduler. This schedule can be referred to by the user at the time of booking to create recurring room reservations. The attribute ``List of dates/times'' returns all the days and times of the week when the lecture is scheduled. The class ``Schedule'' is associated with the class ``Booking'' in one-to-many (0...1 to *) association.
+
+		Booking: The class ``Booking'' holds the booking metadata about the room reservations. The attributes ``Start Time'' and ``End Time'' returns the start and end time of the booking. It refers class ``Schedule'' to get a lecture schedule if it is recurring booking. The class ``Booking'' is associated with the class ``Room'', ``Schedule'' and ``Registered User'' in many-to-one association. The class ``Room'' is also associated with the class ``Student'' in one-to-one (1 to 1) and classes ``Employee'' \& ``Professors'' in one-to-many (1 to *) association.
+
+		User: The class ``User'' is a master class for all the users in the system. It is associated with the class ``Navigation Instructions'' in a one-to-many (1 to *) association.
+
+		Registered User: The class ``Registered User'' is a master class for university students, professors and other university staff. It means these users are authenticated via valid student or employee ID. The classes ``Student'', ``Professors'' and ``Employee'' are inherited from the class ``Registered User'' and associated with the class ``Booking'' in a one-to-many (1 to *) association for each of their booking.
+
+		Guest: The class ``Guest'' is a user who is not registered in the system. It is inherited from the class ``User'' and has limited privileges in the system such as requesting navigational instructions.
+
+
+		Room: The class ``Room'' is a software component that is used to represent the physical room. It is associated with the classes ``Booking'', ``Navigation Instructions'', ``Display'' (1 to 1 or 1 to 0), ``Lock'' (1 to 1), ``Movement Sensor'' and ``Booking'' in one-to-many (1 to *) association. ``Room'' contains a total of 6 attributes which are described below:\\
+		``Room Number'': The attribute ``Room Number'' is used to identify the room uniquely. It is a primary key for the class ``Room''.\\
+		``Capacity'': The attribute ``Room Capacity'' is used to identify the capacity of the room or the number of people it can fit.\\
+		``Room Size'': The attribute ``Room Size'' is used to identify the size of the room in square meters.\\
+		``Category'': The attribute ``Category'' is used to identify the type of the room such as lecture room, seminar room, etc.\\
+		``Projector available'': The attribute ``Projector available'' is used to identify whether the room has a projector or not.\\
+		``Building'': The attribute ``Building'' is used to identify the building in which the room is located.
+
+
+%%%%%%%% System Architecture (Akshay)%%%%%%%%%
+\section{System architecture}
+	System architecture serves as the foundational blueprint for the design and operation of intricate systems. It encompasses the configuration of components, their interactions, and the pathways through which data flows to accomplish specified objectives \cite{steen2007distributed}. A well-organized architecture promotes modularity, facilitating efficient development and maintenance by compartmentalizing the system into manageable modules. Furthermore, it enhances scalability by accommodating growth and demands without disrupting the entire system \cite{kotseruba2016review}. With a focus on reliability, a good architecture minimizes vulnerabilities by distributing tasks and implementing redundancy \cite{steen2007distributed}. By addressing performance, security, and interoperability, the architecture ensures a robust and adaptable system that can evolve over time whilst optimizing resource utilization. Essentially, system architecture constitutes the essential framework that underpins a system's efficiency, durability, and effectiveness in a dynamic technological landscape \cite{kotseruba2016review}. \figurename~\ref{fig:systemarchitecture} shows the system architecture we designed for the University Room Management System.
+
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{Figures/SystemArchitecture.pdf}
+		\caption{System architecture of the University Room Management System}
+		\label{fig:systemarchitecture}
+	\end{figure}
+
+	The system is bifurcated into four parts, namely, Frontend, Backend, Database and Devices. The Frontend is the user interface that is used to interact with the system. The Backend is the core of the system which is responsible for processing the user requests and generating the response. The Database is used to store the system data such as infrastructure metadata or user data. The Frontend and Backend are connected to each other via APIs. The Backend and Database are connected via a physical Ethernet connection. The Frontend and Database are not connected to each other directly but via Backend. 
+
+	The web server, business logic and database are hosted on different on-premises servers and connected to each other using a physical connection. As this server is locally deployed, all the processing takes place locally and no data is stored in the cloud.
+
+	\figurename~\ref{fig:systemarchitecture} shows multiple rooms, each equipped with devices such as a room display, door lock and movement sensor. Each room connects the IoT devices through a wireless network Gateway.	Connections to the rooms and their components are managed by a Rule Engine. Each device inside the room may use a different communication protocol (i.e. RF, WIFI, Zigbee, Bluetooth, etc.) To deal with all these different protocols, a Gateway is used to convert the data into a common format and connect to local servers. The Rule Engine is used to process the data and generate the response. The Gateway and Rule Engine are connected to each other via a physical Ethernet connection.
+
+	Devices: 
+	IoT devices indicated in the system architecture are door locks, room displays and motion sensors. Each device and its nature is represented in the schematic using IoT Patterns\footnote{http://www.internetofthingspatterns.com/patterns/}. The IoT patterns are used to represent the IoT devices and their nature. The IoT patterns are shown in \tablename~\ref{tab:iotpatterns} below.
+
+
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{|c|Sc|}
+			\hline
+			Mains Powered Device               & \cincludegraphics[width=1cm]{Figures/mains-powered-device.png} \\ \hline
+			Period Energy Limited Device       & \cincludegraphics[width=1cm]{Figures/period-energy-limited-device.png} \\ \hline
+			Always-On Device                   & \cincludegraphics[width=1cm]{Figures/always-on-device.png} \\ \hline
+			Normally-Sleeping Device           & \cincludegraphics[width=1cm]{Figures/normally-sleeping-device.png} \\ \hline
+			Rules Engine                       & \cincludegraphics[width=1cm]{Figures/rules-engine.png} \\ \hline
+			Event-Based Sensing                & \cincludegraphics[width=1cm]{Figures/event-based-sensing.png} \\ \hline
+			Schedule-Based Sensing             & \cincludegraphics[width=1cm]{Figures/schedule-based-sensing.png} \\ \hline
+			Device Gateway					   & \cincludegraphics[width=1cm]{Figures/device-gateway.png} \\ \hline
+		\end{tabular}
+		\caption[IoT Patterns]{IoT Patterns\footnotemark }
+		\label{tab:iotpatterns}
+	\end{table}
+
+	Door Lock: Each room has one door lock that is battery operated. The only drawback of this is batteries need to be replaced once in a while. The locks are usually sleeping devices and activate based on events. The lock has event-based sensing which means it will send the data only when the event occurs. The event in this case is when the door is locked or unlocked or on system request.
+
+	Room Display: The displays are connected to an active power grid as it is always on and requires a continues power supply. The display shows the booking schedule of the respective room.
+
+	Motion Sensor: The motion sensor is again always on the device and connected to the power grid. The motion sensor uses scheduled-based sensing which means it will send the data periodically as per schedule.
+
+	All rooms can be interconnected through a network switch to local servers and subsequently linked to the front end via APIs. To safeguard against external threats, a firewall filters incoming and outgoing traffic. This firewall is connected to the network switch via a physical Ethernet link.
+
+\newpage % Force new page for better looks
+
+\footnotetext{http://www.internetofthingspatterns.com/patterns/} % Footnote for the table
+
+\section{Choosing an appropriate Software development process}
+
+Considering all the theoretical aspects that have been discussed in this paper, including a Business Process Model, Use Cases, User Stories, Domain Model, and the System Architecture, we are able to determine a suitable Software Development Process Model (SDPM) to develop the overall system. Choosing a Software Development Process Model is a critical step, as it determines the methodology of the practical part of the project.
+
+As defined by the IEEE, software engineering is the utilization of the systematic, disciplined, and quantitative approach to development and maintenance of software \cite{a3}. While developing a product at its finest shape is important, the process steps and methods that lead to it proved to be as important and critical to create a complete product. Such methods provide approaches and criteria to effectively organize tasks among teams and manage resources and other costs \cite{a4}. In this paper, we took into consideration four approaches. These include agile methods such as Extreme Programming (XP) and Scrum, in addition to the waterfall approach and spiral approach.
+Agile approaches are a set of software development principles and practices. All agile software development methods build the software in iterations and incremental processes. The main goal of the agile methods is to reduce the resources needed in the software development process \cite{a4}. There are many types of agile methods and each of them have their own principles, roles, lifecycle, advantages, and disadvantages.
+
+
+\subsection{Scrum Method}
+The Scrum method provides a structured and iterative approach to manage complex projects. It aims to provide the best quality results in a short amount of time. Scrum is about implementing using specific roles and working in short iterations called sprints to incrementally build the required system and coordinate work. It is known for its simplicity and focusing on the project management part rather than the practical one. There are three main Scrum roles that play a major role in the Scrum methodology: The product owner, Scrum master, and the development team.
+The main three phases in Scrum are:
+
+\begin{itemize}
+	\item The Initial phase: which is defining the general goals and objectives.
+	\item The development phase: which are the sprints cycles, and the result of each sprint is added to the system.
+	\item The project closure phase: where the goals and objective are achieved.
+\end{itemize}
+
+\subsection{Extreme Programming (XP)}
+Extreme Programming is one of the early agile methods used. It was designed to solve problems with frequently changing requirements. It aims to reduce the cost of the changing requirements by replacing long development cycles with multiple short cycles. The XP Life cycle consist of multiple phases:
+
+\begin{itemize}
+	\item The Exploration phase: where the customer is an essential part in the XP team and makes decisions alongside also.
+	\item The Planning phase: where the schedule is planned and determined.
+	\item The Iterations to release phase.
+	\item The Production phase: where testing and evaluating of the performance of the system is being done.
+	\item The Maintenance phase: where new cooperating people into the team.
+	\item The Death phase: where no more changes are requested, and the current systems satisfy the user needs and death happen when the system no more delivering the desired results.
+\end{itemize}
+
+The XP roles are different from Scrum as they change according to the needs of the task as they are: Programmer, customer, tester, coach, consultant, and manager \cite{a4}.
+ 
+\subsection{The waterfall approach}
+The waterfall model is described as the simplest and most traditional software development process. It is structured in a way that can work well for projects with known requirements. 
+The common elements of the waterfalls model are Requirement gathering, System Analysis, Coding, Testing, Implementation/Deployment, Operations and Maintenance.
+%The elements of the waterfalls model are as follow:
+%\begin{multicols}{2}
+%	\begin{enumerate}
+%		\item Requirement gathering
+%		\item System Analysis
+%		\item Coding
+%		\item Testing
+%		\item Implementing/Deployment
+%		\item Operations and Maintenance
+%	\end{enumerate}
+%\end{multicols}
+
+Every step needs to be completed, validated, and documented as planned for the next step to start as it follows a strict and linear sequence of phases. For that, the waterfall model approach has become the fundamental basis for most software development in governments and industries \cite{a5}.
+\figurename~\ref{fig:waterfall} shows an example of the waterfall model.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.5\textwidth, page=2, clip,trim=4cm 8.5cm 4cm 3cm]{Figures/paper_models.pdf}
+	\caption{Waterfall model \cite[p.62]{a6}}
+	\label{fig:waterfall}
+\end{figure}
+
+\subsection{The spiral approach}
+The Spiral model approach is designed to solve the problems of the old traditional software development processes, and it is a risk-driven approach, as it is the combination of both Waterfall model and iterative development. The main component used here is that it involves repeating cycles or iterations.
+With every iteration the cycles grow in scope. That means the development cycles grow together with the developed system.
+Additionally, the spiral approach concentrates on risk management in each cycle \cite{a6}. The life cycle of the spiral approach includes:
+
+\begin{enumerate}
+	\item Identification of objectives for part of the project.
+	\item Generates alternatives like multiple designs. And consider some constraints that will affect the implementation like cost, timeline.
+	\item Evaluate alternatives in term of how good they identify the objectives and adheres to the constraints.
+	\item Identify risks during evaluation process.
+	\item Develop risk strategy to resolve the identified sources of risks.
+	\item Reassessing the remaining risks.
+	\item Determine the next steps as they depend on the remaining risks, if there are any further iterations will be needed and if the risks are minimal the project may proceed with chosen alternative.
+\end{enumerate}
+
+The spiral approach is also shown in \figurename~\ref{fig:spiral}. Note the growing scope of the cycles with each iteration.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.7\textwidth, clip, page=4, trim=3cm 10cm 3cm 3cm]{Figures/paper_models.pdf}
+	\caption{Spiral development process \cite[p.64]{a6}}
+	\label{fig:spiral}
+\end{figure}
+
+\subsection{The chosen software development approach}
+
+According to this comparison between all the mentioned approaches, Spiral approach is the best suited approach for our URMS as each iteration allows for the refinement and improvement of the URMS, leading to better results over time in every step. Also, we take into consideration the risk analysis to improve the performance in the next iteration.
+
+%\begin{table}[h]
+%	\centering
+%	\begin{tabular}{|m{2.5cm}|m{5cm}|m{5cm}|}
+%		\hline
+%		\textbf{Approach} & \textbf{Advantages} & \textbf{Disadvantages} \\
+%		\hline
+%		Waterfall & Well-defined phases make it easier to set clear milestones and track progress. & Lack of flexibility to accommodate changing requirements during the development process. \\
+%		\hline
+%		Spiral & At any level, it combines prototyping as risk reduction, and each iteration builds upon the previous one. & Iterations can extend the timeline. \\
+%		\hline
+%		Scrum & Flexibility and Transparency. & Resource-Intensive. \\
+%		\hline
+%		Extreme Programming & Improving quality through automated tests before applying new features. & Customer involvement can make it stressful. \\
+%		\hline
+%	\end{tabular}
+%	\caption{Comparison of Software Development Approaches}
+%	\label{tab:sdapproaches}
+%\end{table}
+
+%According to the previous table we can see that Spiral approach fits our case and will be a suited option to choose as our software development process, because of it is a risk-driven approach with incremental iterations and risk analysis methods, we are reducing the risks by providing prototype at each completed phase, to evaluate alternatives, identify, resolve risks and use the results of the risk analysis to improve the results in the next iteration, reducing the risks with every phase. In addition, the Waterfall approach was not the perfect choice for our system, because our system is too big, for example, one of the difficulties that it will be hard and complex to contain the demanding changing in the requirement in the development phase. Moreover, the system cannot be easily split into small packets for scrum sprints also, but with the fast start and increasingly long iterations of spiral approach are good for the increasingly more complex URMS.
+
+The waterfall approach was not the perfect choice for our system, because the systems' scope is too big. For example it would be difficult to contain the changing requirements during development phase.
+Moreover, the system also cannot always be easily split into small packets for scrum sprints.
+The fast start and increasingly long iterations of spiral approach are a good fit for the increasingly more complex URMS.
+
+The Spiral approach will be a valid option in this case to choose as our software development process because it is an incremental approach that grows with every completed phase. Additionally, it is a risk-driven approach with incremental iterations providing a prototype at every cycle. By evaluating alternative designs and utilizing the results from risk analysis we will be able to achieve a better result without being cost demanded and resources intensive.
+
+\section{Conclusion}
+
+This paper focused on the first steps of software project development process, based on the introduced University Room Management System.
+We chose the system as a representative IoT project, as this technology is developing fast and will likely be relevant for the near future.
+
+We started by describing our vision of the system, with the help of an exemplary business process.
+Following we converted our vision into use cases and user stories.
+In this context we also explored how large language models can be used to aid in the initial system specification phase.
+We generated a domain model for the system with the aid of the use cases and identified the system's conceptual classes.
+Based on the previous results a system architecture was designed to depict a possible internal system structure using well known IoT patterns.
+Finally, exploring four different software development process models, we came to the conclusion, that every approach has its benefits, depending on the system under development. The spiral approach was well suited for our specific application of the URMS.
+
+Keeping track of all requirements and a structured system design help to simplify the development process. This is especially true for complex projects, like the development of an IoT system, which combines the worlds of software and hardware projects.
+Our results can be used as a base for developing the URMS or a similar IoT projects. Suitable approaches have to be chosen depending on the systems nature and specific use cases, which simplifies development tasks and allows teams to work more effective and efficiently.
+
+\newpage
+\bibliographystyle{IEEEtran}
+\bibliography{ref}
+
+\newpage
+%\section*{Appendix}
+\appendix
+
+\subsection{Conversation with ChatGPT} \label{appdx:chatgpt}
+ 
+The conversation with ChatGPT described in section~\ref{sec:chatgpt}:
+
+Prompt:
+\begin{framed}
+	\small
+	A University Manager system, which is a system where students can book lecture rooms at the university for study and professors can book seminar rooms to give lectures. In addition the University Manager system, give the possibility for students, professor and guests  to have navigation instruction for a seminar room they search for.
+	
+	Write me a use-case specification using the proper and formal structure for that.
+	
+	A use case specification for the use case called (getting navigation instructions to a seminar room in the university) that is implemented in the University Manager system.
+\end{framed}
+
+Answer:
+\begin{framed}
+	\small
+	\textbf{Use Case Specification: Getting Navigation Instructions to a Seminar Room in the University}
+	
+	\textbf{Use Case Name:} Get Navigation Instructions to a Seminar Room
+	
+	\textbf{ID:} UC-NAV-01
+	
+	\textbf{Description:} This use case allows students, professors, and guests using the University Manager system to obtain navigation instructions to reach a specific seminar room within the university campus. Users can search for a seminar room by its room number or name, and the system will provide step-by-step directions to help them reach the desired location.
+	
+	\textbf{Primary Actor:} User (Student, Professor, or Guest)
+	
+	\textbf{Preconditions:}
+	
+	\begin{itemize}
+		\item The University Manager system is up and running.
+		\item The user is logged into the system (for registered students and professors).
+	\end{itemize}
+	
+	\textbf{Postconditions:}
+	
+	\begin{itemize}
+		\item The user receives navigation instructions to the requested seminar room.
+	\end{itemize}
+	
+	\textbf{Trigger:} User initiates the request to get navigation instructions to a seminar room.
+	
+	\textbf{Main Flow:}
+	
+	\begin{enumerate}
+		\item     The user opens the University Manager system's application or website.
+		\item If required, the user logs into the system using their credentials. (Skipped for guests)
+		\item The user selects the option to "Get Navigation Instructions" from the main menu.
+		\item The system presents the user with a search bar to enter the seminar room number or name they wish to navigate to.
+		\item The user enters the seminar room number or name in the search bar.
+		\item The system validates the entered information and searches for the requested seminar room in the database.
+		\item If the seminar room is found:\\
+		a. The system calculates the best route to reach the seminar room from the user's current location or a specified starting point within the campus.\\
+		b. The system generates step-by-step navigation instructions, including directional cues (e.g., left, right, straight), landmarks, and approximate distances.\\
+		c. The navigation instructions are displayed on the user's device screen.
+		\item If the seminar room is not found:\\
+		a. The system displays an error message indicating that the seminar room could not be located.\\
+		b. The use case terminates.
+	\end{enumerate}
+	
+	\textbf{Alternate Flow:}
+	
+	6a. If the entered seminar room number or name is not valid or does not exist:\\
+	i. The system displays an error message indicating that the seminar room could not be found.\\
+	ii. The user is given the option to re-enter the room number or name.\\
+	iii. The user may choose to cancel the navigation request.\\
+	iv. The use case continues from step 4.
+	
+	\textbf{Exceptional Flow:}
+	
+	\begin{enumerate}
+		\item If the University Manager system is not operational due to maintenance or technical issues:\\
+		a. The user is informed about the unavailability of the system.\\
+		b. The user may be asked to try again later or contact support for assistance.\\
+		c. The use case terminates.
+	\end{enumerate}
+	
+	\textbf{Notes:}
+	
+	\begin{itemize}
+		\item The University Manager system may integrate with campus maps or GPS services to provide accurate navigation instructions.
+		\item The system could offer additional features, such as displaying accessibility information or estimated time of arrival to the seminar room.
+		\item For security reasons, certain seminar rooms (e.g., faculty offices) may have restricted access for navigation instructions. In such cases, the system should inform the user accordingly.
+	\end{itemize}
+\end{framed}
+
+Prompt:
+\begin{framed}
+	\small
+	Use Case Specification: Getting Navigation Instructions to a Seminar Room in the University in terms of :\\
+	Name\\
+	Scope\\
+	Level\\
+	Primary actor \\
+	Stakeholders\\
+	preconditions\\
+	postconditions\\
+	Main success scenario\\
+	Extensions\\
+	Special requirements:\\
+	Technology / data variation: \\
+	Frequency of occurence: \\
+	Open issues:
+\end{framed}
+
+Answer:
+\begin{framed}
+	\small
+	\textbf{Name:} Getting Navigation Instructions to a Seminar Room in the University
+	
+	\textbf{Scope:} University Manager System
+	
+	\textbf{Level:} User Goal (Primary), Subfunction (Secondary)
+	
+	\textbf{Primary Actor:} User (Student, Professor, or Guest)
+	
+	\textbf{Stakeholders:}
+	
+	\begin{itemize}
+		\item Students: Require navigation instructions to find seminar rooms for academic purposes.
+		\item Professors: Need navigation guidance to reach seminar rooms for conducting lectures or meetings.
+		\item Guests: Visitors to the university who may require navigation assistance to attend seminars or events.
+		\item University Management: Ensures the system enhances campus navigation and user experience.
+	\end{itemize}
+	
+	\textbf{Preconditions:}
+	
+	\begin{itemize}
+		\item The University Manager system is operational and accessible to the primary actor.
+		\item The user has a compatible device with access to the University Manager system.
+		\item For registered students and professors, the user is logged into the system.
+	\end{itemize}
+	
+	\textbf{Postconditions:}
+	
+	\begin{itemize}
+		\item The user receives accurate navigation instructions to the requested seminar room within the university campus.
+	\end{itemize}
+	
+	\textbf{Main Success Scenario:}
+	
+	\begin{enumerate}
+		\item The user opens the University Manager system's application or website.
+		\item If required, the user logs into the system using their credentials. (Skipped for guests)
+		\item The user selects the option to "Get Navigation Instructions" from the main menu.
+		\item The system presents the user with a search bar to enter the seminar room number or name they wish to navigate to.
+		\item The user enters the seminar room number or name in the search bar.
+		\item The system validates the entered information and searches for the requested seminar room in the database.
+		\item If the seminar room is found:\\
+		a. The system calculates the best route to reach the seminar room from the user's current location or a specified starting point within the campus.\\
+		b. The system generates step-by-step navigation instructions, including directional cues (e.g., left, right, straight), landmarks, and approximate distances.
+		c. The navigation instructions are displayed on the user's device screen.
+		\item If the seminar room is not found:\\
+		a. The system displays an error message indicating that the seminar room could not be located.\\
+		b. The user is given the option to re-enter the room number or name.\\
+		c. The user may choose to cancel the navigation request.
+	\end{enumerate}
+	
+	\textbf{Extensions:}
+	
+	6a. If the entered seminar room number or name is not valid or does not exist:\\
+	i. The system displays an error message indicating that the seminar room could not be found.\\
+	ii. The user is prompted to re-enter the room number or name.\\
+	iii. The user may choose to cancel the navigation request.\\
+	iv. The use case continues from step 4.
+	
+	\textbf{Special Requirements:}
+	
+	\begin{itemize}
+		\item The University Manager system should integrate with campus maps or GPS services for accurate navigation.
+		\item The system may provide additional features such as displaying accessibility information or estimated time of arrival to the seminar room.
+		\item Certain seminar rooms may have restricted access, and the system should handle these cases appropriately.
+	\end{itemize}
+	
+	\textbf{Technology / Data Variation:}
+	
+	\begin{itemize}
+		\item The system should be accessible via various platforms (web, mobile apps) to accommodate different user devices.
+		\item The availability of campus map data and GPS accuracy may vary depending on the university's infrastructure.
+	\end{itemize}
+	
+	\textbf{Frequency of Occurrence:}
+	
+	\begin{itemize}
+		\item The use case is expected to occur frequently throughout the academic year as students attend lectures, professors conduct classes, and events are held.
+	\end{itemize}
+	
+	\textbf{Open Issues:}
+	
+	\begin{itemize}
+		\item How will the system handle navigation to seminar rooms located in different buildings or floors within the campus?
+		\item Should the system provide additional options such as displaying alternative routes or real-time updates for room availability?
+		\item How will the system ensure privacy and security of users' location data while providing navigation instructions?
+	\end{itemize}
+\end{framed}
+
+Prompt:
+\begin{framed}
+	\small
+	write me a user story using the INVEST principal for the following user story:
+	
+	user story: As a Professor, I want to book a room according to a schedule so that I can give regular lectures in that room.
+\end{framed}
+
+Answer:
+\begin{framed}
+	\small
+	\textbf{User Story:} As a Professor, I want to book a room according to a schedule so that I can give regular lectures in that room.
+	
+	\textbf{INVEST Principle:}
+	
+	\begin{itemize}
+		\item \textbf{Independent:} The user story is self-contained and can be implemented without dependencies on other user stories. It focuses on the specific need of the Professor to book a room for regular lectures.
+		
+		\item \textbf{Negotiable:} The details of the implementation are open to negotiation between the Professor (user) and the development team. The team can collaborate with the Professor to determine the specific room booking requirements and scheduling preferences.
+		
+		\item \textbf{Valuable:} The user story provides clear value to the Professor by enabling them to secure a designated room for their regular lectures, ensuring consistent teaching arrangements and an organized learning environment.
+		
+		\item \textbf{Estimable:} The user story is well-defined and has a clear scope, making it estimable for the development team. The effort required to implement the room booking functionality can be reasonably assessed.
+		
+		\item \textbf{Small:} The user story has a focused and concise scope, which allows the development team to implement it within a single development iteration.
+		
+		\item \textbf{Testable:} The user story's acceptance criteria are specific and measurable, allowing for effective testing. It is possible to verify the successful implementation of the room booking feature based on the defined criteria.
+	\end{itemize}
+	
+	\textbf{Acceptance Criteria:}
+	
+	\begin{itemize}
+		\item The Professor can access the University Manager system and navigate to the "Room Booking" section.
+		\item The system presents a form with options to select the desired room, date, start time, and end time for the lecture.
+		\item The Professor can enter the required details and submit the booking request.
+		\item The system validates the availability of the selected room for the specified date and time.
+		\item If the room is available, the system confirms the booking and sends a confirmation email to the Professor.
+		\item The booked room should be reserved in the system's schedule for the specified date and time.
+		\item The Professor can view, modify, or cancel their booked lectures within the system as needed.
+		\item In case of any conflicts or unavailability, the system provides alternative room options or available time slots for the Professor's lectures.
+		\item The system ensures that only authorized Professors can access the room booking functionality.
+	\end{itemize}
+	
+	\textbf{Additional Considerations:}
+	
+	\begin{itemize}
+		\item The system should have user authentication to ensure that only authorized Professors can access the room booking feature.
+		\item The system may send reminders or notifications to the Professor before the scheduled lecture time.
+		\item The room booking feature should be user-friendly and accessible via multiple platforms, such as web and mobile applications.
+		\item The system should handle and display room availability in real-time to avoid double bookings.
+		\item The user interface should be intuitive and provide clear feedback on the status of the room booking process.
+	\end{itemize}
+	
+	Note: The user story may be further elaborated during backlog grooming or refinement sessions to capture more detailed requirements and user expectations.
+\end{framed}
+
+Prompt:
+\begin{framed}
+	\small
+	write me a user story using the INVEST principal for the following user story:
+	
+	user story: 
+	As a University member, I want to use the Room Management System, because it will make life easier.
+\end{framed}
+
+Answer:
+\begin{framed}
+	\small
+	\textbf{User Story:} As a University member, I want to use the Room Management System because it will make life easier.
+	
+	\textbf{INVEST Principle:}
+	
+	\begin{itemize}
+		\item \textbf{Independent:} The user story is self-contained and can be implemented independently without relying on other user stories. It focuses on the specific need of the University member to utilize the Room Management System for simplifying room-related tasks.
+		
+		\item \textbf{Negotiable:} The user story allows for negotiation between the University member (user) and the development team to identify the specific features and functionalities that will enhance their experience with the Room Management System.
+		
+		\item \textbf{Valuable:} The user story holds clear value for the University member by offering a convenient and efficient solution for managing room-related activities, streamlining processes, and saving time.
+		
+		\item \textbf{Estimable:} The user story is well-defined and has a clear scope, making it estimable for the development team. The effort required to implement the Room Management System features can be reasonably estimated.
+		
+		\item \textbf{Small:} The user story has a focused scope, enabling the development team to implement it within a single development iteration.
+		
+		\item \textbf{Testable:} The user story's acceptance criteria are specific and measurable, enabling effective testing. The success of the Room Management System can be assessed based on the defined criteria.
+	\end{itemize}
+	
+	\textbf{Acceptance Criteria:}
+	
+	\begin{itemize}
+		\item The Room Management System should be accessible to all University members through a user-friendly web application or mobile interface.
+		\item The system should have user authentication to ensure that only authorized University members can access and use the Room Management features.
+		\item University members should be able to log in using their credentials or university ID.
+		\item The Room Management System should provide a clear and intuitive user interface with navigational menus and visual cues.
+		\item University members should be able to view available rooms, their schedules, and occupancy status in real-time.
+		\item The system should offer a simple and efficient process for booking or reserving rooms for various purposes (e.g., lectures, study sessions, meetings).
+		\item Room availability should be displayed in a visual calendar format, with filtering options based on date, time, location, or room amenities.
+		\item The system should send notifications or reminders to users about upcoming room reservations or changes in room status.
+		\item University members should be able to easily modify or cancel their room reservations within the system.
+		\item The Room Management System should maintain accurate and up-to-date records of room bookings and usage.
+		\item The system should have a responsive design to ensure usability across different devices and screen sizes.
+	\end{itemize}
+	
+	\textbf{Additional Considerations:}
+	
+	\begin{itemize}
+		\item The Room Management System could incorporate features like room occupancy limits, equipment availability, and room-specific details.
+		\item To enhance user adoption, the system could provide user tutorials or help documentation for first-time users.
+		\item The system should prioritize data security and privacy, ensuring that only authorized personnel can access sensitive room-related information.
+		\item Regular user feedback and iterative improvements can be incorporated to enhance the Room Management System based on user preferences and needs.
+	\end{itemize}
+	
+	Note: The user story may be further elaborated during backlog grooming or refinement sessions to capture more detailed requirements and user expectations
+\end{framed}
+\end{document}
