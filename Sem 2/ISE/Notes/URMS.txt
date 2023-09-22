@@ -1,0 +1,26 @@
+University Room Management System
+---------------------------------
+
+The University Room Management System (URMS) supports the management of rooms at a university.
+The system can be used by employees of the university aswell as students.
+It allows users to list all rooms, search currently available rooms and can recommend alternative rooms.
+Next to each room the system shows the schedule and avaialbility of the room.
+Users are able to book rooms for events like lectures or learning groups.
+Users are able to unlock booked rooms via the system.
+The system also includes indoor navigation capabilities for users to navigate to a specific room inside the university.
+
+
+Business processes:
+
+Search
+History
+Navigation instructions
+
+Booking / Reserving
+unlocking room
+Leaving / release
+locking room
+
+check availability
+
+update status in db

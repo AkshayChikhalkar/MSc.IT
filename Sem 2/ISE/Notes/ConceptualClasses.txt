@@ -1,0 +1,79 @@
+Task IV: Domain Model
+
+Step 1: Find conceptual classes
+
+Improvized brain stormung:
+- Booking
+- User
+ - Student
+ - Professor
+ - Guest
+- Room
+- Navigation Instruction
+- Room Management System
+
+
+Using Category list from Slides by Mr. mertens:
+
+Business transactions:
+- Booking (includes reservations implicitly)
+
+Transaction line items:
+- Booking time frame
+
+Product/service:
+- Room
+- Navigation Instructions
+
+Transaction record:
+- /
+
+Actors:
+- Students
+- Guest
+- Professor
+- University employees
+
+Place:
+- University Campus
+- Software-Frontend
+
+Events:
+- Booking
+
+Physical objects:
+- Room
+- Building
+- Room display
+- Door lock
+- Movement sensor
+
+Descriptions:
+- /
+
+Catalouge:
+- /
+
+Container:
+- Room
+- Buidling
+- Campus
+
+Things in container:
+- Building
+- Room
+- Room display
+- Door lock
+- Movement sensor
+
+Neighboring systems:
+- /
+
+Records:
+- Booking
+
+Financial instruments:
+- /
+
+Schedules/manuals:
+- Room schedule
