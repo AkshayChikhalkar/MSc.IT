@@ -21,10 +21,6 @@ Welcome to the study material repository for MSc. Information Technology student
 ### <span style="color:red">Note:</span>
 - <span style="color:blue"> For DSS, please refer to the scribbled notes from the file `.url` in the DSS folder or [click here](https://1drv.ms/o/s!Ao-9KOZo7bY9gWRqYJ6VQ9kSn4tp?e=y5hykQ).</span>
 
-### <span style="color:red">**Note:**</span>
-- <span style="color:red">For DSS, please refer to the scribbled notes from the file `.url` in the DSS folder.</span>
-
-
 ## Semester 2: Summer Semester 2023
 
 ### Subjects:
