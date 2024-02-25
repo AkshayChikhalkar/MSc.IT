@@ -1,6 +1,6 @@
-# MSc. Information Technology Study Material
+# MSc. Information Technology Study Material @ Th-owl
 
-Welcome to the study material repository for MSc. Information Technology students! This repository is designed to provide comprehensive resources and materials to support your academic journey in the field of Information Technology.
+Welcome to the study material repository for MSc. Information Technology students at Th-owl! This repository is designed to provide comprehensive resources and materials to support your academic journey in the field of Information Technology.
 
 ## Semester 1: Winter Semester 2022
 
