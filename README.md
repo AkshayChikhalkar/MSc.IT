@@ -18,8 +18,8 @@ Welcome to the study material repository for MSc. Information Technology student
 - **Report Samples**: Templates and examples for writing reports related to MBA and SMW.
 - **OneNote Notebook Links**: Links to OneNote notebooks containing scribbled notes for quick reference and review.
 
-### <span style = "color:red" Note </span>:
-- For DSS, please refer to the scribbled notes from the file `.url` in the DSS folder or [click here](https://1drv.ms/o/s!Ao-9KOZo7bY9gWRqYJ6VQ9kSn4tp?e=y5hykQ).
+### <span style="color:red">Note:</span>
+- <span style="color:blue"> For DSS, please refer to the scribbled notes from the file `.url` in the DSS folder or [click here](https://1drv.ms/o/s!Ao-9KOZo7bY9gWRqYJ6VQ9kSn4tp?e=y5hykQ).</span>
 
 ## Semester 2: Summer Semester 2023
 
