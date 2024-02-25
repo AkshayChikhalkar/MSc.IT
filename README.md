@@ -2,7 +2,7 @@
 
 Welcome to the study material repository for MSc. Information Technology students at Th-owl! This repository is designed to provide comprehensive resources and materials to support your academic journey in the field of Information Technology.
 
-## Semester 1: Winter Semester 2022
+## Semester 1: Winter 2022
 
 ### Subjects:
 
@@ -21,7 +21,7 @@ Welcome to the study material repository for MSc. Information Technology student
 ### <span style="color:red">Note:</span>
 - <span style="color:blue"> For DSS, please refer to the scribbled notes from the file `.url` in the DSS folder or [click here](https://1drv.ms/o/s!Ao-9KOZo7bY9gWRqYJ6VQ9kSn4tp?e=y5hykQ).</span>
 
-## Semester 2: Summer Semester 2023
+## Semester 2: Summer 2023
 
 ### Subjects:
 
@@ -35,9 +35,10 @@ Welcome to the study material repository for MSc. Information Technology student
 
 #### Content:
 - **Lecture Notes**: Detailed notes covering advanced concepts in machine learning, authentication, autonomous vehicles, and more.
-- **Code Samples**: Implementations and examples related to machine learning algorithms, authentication mechanisms, and industrial software engineering.
-- **Report Samples**: Templates and samples for writing reports on topics such as information fusion and network security.
-- **OneNote Notebook Links**: Links to OneNote notebooks containing additional notes and references for each subject.
+- **Code Samples**: Implementations and examples related to ATA and AUT.
+- **Report Samples**: Templates and samples for writing reports on topics such as AUV, AUT, SMW, ATA, UEN, etc.
+- **OneNote Notebook Links**: Links to OneNote notebooks containing additional notes and references for DSS.
+- **Latex Templates for Reports**: Latex templates for reports are also available. (all tex files are compiled using ['MikTex' compiler](https://miktex.org/howto/install-miktex-mac) using VS code extension ['LaTex Workshop'](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) on macOS Sonoma 14.3.1 (23D60)).
 
 ## Contribution
 
