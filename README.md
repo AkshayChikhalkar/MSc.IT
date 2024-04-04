@@ -39,6 +39,7 @@ Welcome to the study material repository for MSc. Information Technology student
 - **Report Samples**: Templates and samples for writing reports on topics such as AUV, AUT, SMW, ATA, UEN, etc.
 - **OneNote Notebook Links**: Links to OneNote notebooks containing additional notes and references for DSS.
 - **Latex Templates for Reports**: Latex templates for reports are also available. (all tex files are compiled using ['MikTex' compiler](https://miktex.org/howto/install-miktex-mac) using VS code extension ['LaTex Workshop'](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) on macOS Sonoma 14.3.1 (23D60)).
+- **Trained Models (.pkl)**: In the form of '.pkl' file, already trained 4 different algorithms for over 1000 iterations (refer to script for details) are available. No need to train them again.
 
 ## Contribution
 
