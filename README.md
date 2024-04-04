@@ -11,11 +11,13 @@ Welcome to the study material repository for MSc. Information Technology student
 - **MBA - Master of Business Administration**
 - **SMW - Scientific Methods of Writing**
 - **UEN - Usability Engineering**
+- **PAS - Probability**
 
 #### Content:
 - **Lecture Notes**: Comprehensive notes covering key concepts and theories for each subject.
 - **Code Samples**: Examples demonstrating implementation of algorithms and systems discussed in ATA and DSS.
 - **Report Samples**: Templates and examples for writing reports related to MBA and SMW.
+- **Matlab Scripts**: Matlab scripts for PAS Tests
 - **OneNote Notebook Links**: Links to OneNote notebooks containing scribbled notes for quick reference and review.
 
 ### <span style="color:red">Note:</span>
