@@ -2,7 +2,6 @@
 
 Welcome to the study material repository for MSc. Information Technology students at Th-owl! This repository is designed to provide comprehensive resources and materials to support your academic journey in the field of Information Technology.
 
-## Semester 1: Winter 2022
 
 ### Subjects:
 
@@ -12,6 +11,13 @@ Welcome to the study material repository for MSc. Information Technology student
 - **SMW - Scientific Methods of Writing**
 - **UEN - Usability Engineering**
 - **PAS - Probability**
+- **AML - Advanced Machine Learning**
+- **AUT - Authentication**
+- **AUV - Autonomous Vehicle**
+- **IDS - Industrial Development Strategies**
+- **IFU - Information Fusion**
+- **ISE - Industrial Software Engineering**
+- **NWS - Network Security**
 
 #### Content:
 - **Lecture Notes**: Comprehensive notes covering key concepts and theories for each subject.
@@ -23,17 +29,6 @@ Welcome to the study material repository for MSc. Information Technology student
 ### <span style="color:red">Note:</span>
 - <span style="color:blue"> For DSS, please refer to the scribbled notes from the file `.url` in the DSS folder or [click here](https://1drv.ms/o/s!Ao-9KOZo7bY9gWRqYJ6VQ9kSn4tp?e=y5hykQ).</span>
 
-## Semester 2: Summer 2023
-
-### Subjects:
-
-- **AML - Advanced Machine Learning**
-- **AUT - Authentication**
-- **AUV - Autonomous Vehicle**
-- **IDS - Industrial Development Strategies**
-- **IFU - Information Fusion**
-- **ISE - Industrial Software Engineering**
-- **NWS - Network Security**
 
 #### Content:
 - **Lecture Notes**: Detailed notes covering advanced concepts in machine learning, authentication, autonomous vehicles, and more.
